@@ -1358,9 +1358,8 @@ section::before{
         stepProg=1; animId=null; isPlaying=false;
         document.getElementById('aif-play').textContent='PLAY';
         clearTimeout(stepTimer);
-        if (targetStep<STEPS.length-1) {
-          stepTimer=setTimeout(function(){ if(!isPlaying) animate(targetStep+1,0); }, 1400);
-        }
+        var nextStep = targetStep < STEPS.length-1 ? targetStep+1 : 0;
+        stepTimer = setTimeout(function(){ if (!isPlaying) animate(nextStep, 0); }, 1400);
       }
     }
     animId=requestAnimationFrame(step);
