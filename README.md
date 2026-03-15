@@ -55,7 +55,7 @@ body::before{
 #nav{
   position:fixed;top:0;left:0;right:0;z-index:1000;
   display:flex;align-items:center;justify-content:space-between;
-  padding:0 36px;height:68px;
+  padding:0 52px;height:74px;
   background:rgba(2,5,7,.88);
   backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);
   border-bottom:1px solid var(--border);
@@ -70,11 +70,11 @@ body::before{
 #nav.scrolled::before{opacity:1}
 
 .nav-logo{display:flex;align-items:center;height:40px}
-.nav-logo img{height:38px;width:auto;filter:brightness(1.05)}
+.nav-logo img{height:46px;width:auto;filter:brightness(1.05)}
 
 .nav-links{display:flex;align-items:center;gap:4px}
 .nav-link{
-  font-family:var(--fm);font-size:.58rem;letter-spacing:.12em;
+  font-family:var(--fm);font-size:.78rem;letter-spacing:.1em;
   text-transform:uppercase;color:var(--muted);text-decoration:none;
   padding:6px 12px;border-radius:2px;transition:all .2s;white-space:nowrap;
   position:relative;
@@ -89,7 +89,7 @@ body::before{
 
 .nav-status{
   display:flex;align-items:center;gap:8px;margin-left:12px;
-  font-family:var(--fm);font-size:.58rem;letter-spacing:.1em;
+  font-family:var(--fm);font-size:.75rem;letter-spacing:.08em;
   padding:6px 16px;border:1px solid rgba(118,185,0,.3);
   border-radius:2px;background:rgba(118,185,0,.05);color:var(--g);
   white-space:nowrap;
@@ -117,7 +117,7 @@ body::before{
   gap:6px;padding:40px 24px;
 }
 .mobile-menu.open{display:flex}
-.mobile-menu .nav-link{font-size:.8rem;padding:14px 32px;width:100%;text-align:center;border:1px solid var(--border);border-radius:3px}
+.mobile-menu .nav-link{font-size:1rem;padding:14px 32px;width:100%;text-align:center;border:1px solid var(--border);border-radius:3px}
 
 /* ══════════════════════════════════════════════════════════
    HERO
@@ -128,25 +128,19 @@ body::before{
   padding:100px 0 80px;overflow:hidden;
 }
 
-/* HUD corner decorations */
-#hero::before{
-  content:'';position:absolute;top:80px;left:0;
-  width:180px;height:180px;
-  border-top:1px solid rgba(118,185,0,.2);
-  border-left:1px solid rgba(118,185,0,.2);
-  pointer-events:none;z-index:2;
-}
+/* HUD corner decorations — only right bottom subtle */
+#hero::before{content:none}
 #hero::after{
   content:'';position:absolute;bottom:20px;right:0;
-  width:120px;height:120px;
-  border-bottom:1px solid rgba(0,229,255,.15);
-  border-right:1px solid rgba(0,229,255,.15);
+  width:100px;height:100px;
+  border-bottom:1px solid rgba(0,229,255,.1);
+  border-right:1px solid rgba(0,229,255,.1);
   pointer-events:none;z-index:2;
 }
 
-.container{max-width:1240px;margin:0 auto;padding:0 36px;position:relative;z-index:3}
+.container{max-width:100%;margin:0 auto;padding:0 52px;position:relative;z-index:3}
 
-.hero-grid{display:grid;grid-template-columns:1fr 310px;gap:60px;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1fr 340px;gap:80px;align-items:center}
 
 /* ─ Badge eyebrow ─ */
 .hero-eyebrow{
@@ -266,7 +260,7 @@ body::before{
 }
 @keyframes barShimmer{0%,100%{transform:translateX(-100%)}100%{transform:translateX(200%)}}
 .pipeline-inner{
-  max-width:1240px;margin:0 auto;padding:0 36px;
+  max-width:100%;margin:0 auto;padding:0 52px;
   display:flex;align-items:center;justify-content:space-between;
   gap:0;
 }
@@ -306,7 +300,7 @@ body::before{
 /* ══════════════════════════════════════════════════════════
    SECTION STRUCTURE
 ══════════════════════════════════════════════════════════ */
-section{padding:92px 0;border-top:1px solid var(--border);position:relative;z-index:3}
+section{padding:100px 0;border-top:1px solid var(--border);position:relative;z-index:3}
 
 /* Section corner HUD marks */
 section::before{
@@ -328,7 +322,7 @@ section::before{
 /* ══════════════════════════════════════════════════════════
    CERTIFICATIONS
 ══════════════════════════════════════════════════════════ */
-.cert-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.cert-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
 
 .cert-card{
   background:var(--card);border:1px solid var(--border);
@@ -434,7 +428,7 @@ section::before{
 .sm-t strong{display:block;color:var(--white);font-size:.9rem;margin-bottom:1px;font-weight:600}
 
 /* Sub spec grid */
-.spec-sub{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.spec-sub{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .spec-sub-card{
   background:var(--card);border:1px solid var(--border);
   border-radius:4px;padding:26px 22px;
@@ -451,7 +445,7 @@ section::before{
 /* ══════════════════════════════════════════════════════════
    SKILLS
 ══════════════════════════════════════════════════════════ */
-.skills-wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:60px;align-items:start}
+.skills-wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:80px;align-items:start}
 
 .sg-label{
   font-family:var(--fm);font-size:.68rem;letter-spacing:.16em;
@@ -539,7 +533,7 @@ section::before{
 /* ══════════════════════════════════════════════════════════
    VALUE
 ══════════════════════════════════════════════════════════ */
-.value-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.value-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .vcard{
   background:var(--card);border:1px solid var(--border);
   border-radius:4px;padding:24px 20px;
@@ -560,7 +554,7 @@ section::before{
    FOOTER
 ══════════════════════════════════════════════════════════ */
 #footer{
-  padding:26px 36px;
+  padding:28px 52px;
   background:var(--card);border-top:1px solid var(--border);
   display:flex;align-items:center;justify-content:space-between;
   flex-wrap:wrap;gap:16px;position:relative;z-index:3;
@@ -589,46 +583,15 @@ section::before{
 /* ══════════════════════════════════════════════════════════
    RESPONSIVE
 ══════════════════════════════════════════════════════════ */
-@media(max-width:1080px){
-  .cert-grid{grid-template-columns:repeat(3,1fr)}
-  .value-grid{grid-template-columns:repeat(2,1fr)}
-  .spec-primary{grid-template-columns:1fr}
-  .spec-p-left{border-right:none;border-bottom:1px solid rgba(118,185,0,.15)}
-}
-@media(max-width:768px){
-  #nav{padding:0 20px}
-  .nav-links,.nav-status{display:none}
-  .hamburger{display:flex}
-  .container{padding:0 20px}
-  .hero-grid{grid-template-columns:1fr;gap:32px}
-  .stat-col{flex-direction:row;flex-wrap:wrap}
-  .stat-card{flex:1;min-width:120px}
-  .cert-grid{grid-template-columns:repeat(2,1fr)}
-  .spec-sub{grid-template-columns:1fr}
-  .skills-wrap{grid-template-columns:1fr;gap:36px}
-  .value-grid{grid-template-columns:1fr}
-  .pipeline-inner{gap:4px}
-  .pipe-stage-sub{font-size:.7rem}
-  .pipe-stage-label{display:none}
-  #footer{flex-direction:column;align-items:flex-start;padding:20px}
-  section{padding:60px 0}
-  section::before{left:20px}
-  #hero::before,#hero::after{display:none}
-  .sec-sub{display:none}
-}
-@media(max-width:480px){
-  .cert-grid{grid-template-columns:1fr}
-  .stat-col{flex-direction:column}
-  .hero-tags{gap:6px}
-  .pipeline-inner{justify-content:center;gap:6px}
-  .pipe-arrow{display:none}
-}
+/* tablet breakpoints removed — full-width always */
+/* mobile breakpoint removed */
+/* tiny breakpoint removed */
 
 /* AI Factory Architecture Diagram */
 .aif-diagram-wrap{
   border:1px solid rgba(118,185,0,.2);border-radius:6px;
-  overflow:hidden;background:rgba(8,17,26,.8);
-  margin-bottom:14px;
+  overflow:visible;background:rgba(8,17,26,.8);
+  margin-bottom:18px;
 }
 .aif-diagram-label{
   font-family:var(--fm);font-size:.7rem;letter-spacing:.18em;
@@ -641,7 +604,6 @@ section::before{
 .aif-diagram-label::before{content:'◆';font-size:.6rem}
 .aif-svg{
   width:100%;height:auto;display:block;
-  max-height:300px;
 }
 
 </style>
@@ -688,7 +650,7 @@ section::before{
     <div class="hero-grid">
       <div>
         <div class="hero-eyebrow">
-          <span class="blink">◆</span>&nbsp; AI Factory Solution Architect Profile
+          <span class="blink">◆</span>&nbsp; AI Factory builder
         </div>
 
         <h1 class="hero-name reveal">
@@ -807,7 +769,648 @@ section::before{
       <div class="pipe-stage-sub">AI Factory Live</div>
     </div>
   </div>
+
+<!-- ══════════════════════════════════════════
+     AI FACTORY BUILD ANIMATION
+═══════════════════════════════════════════ -->
+<section id="aif-anim" style="padding:60px 0;border-top:1px solid var(--border);position:relative;z-index:3">
+<div class="container">
+  <div class="sec-hd reveal">
+    <span class="sec-num" style="font-size:.7rem">00</span>
+    <h2 class="sec-title">How Debjit Builds an AI Factory</h2>
+    <div class="sec-line"></div>
+    <span class="sec-sub" id="aif-step-label">Watch the process unfold →</span>
+  </div>
+
+  <div style="position:relative;border:1px solid rgba(118,185,0,.2);border-radius:6px;overflow:hidden;background:rgba(6,12,18,.9)">
+    <!-- Top bar -->
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:10px 20px;border-bottom:1px solid rgba(118,185,0,.15);background:rgba(118,185,0,.04)">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="width:8px;height:8px;border-radius:50%;background:var(--g);box-shadow:0 0 8px var(--g);animation:pulseDot 1.8s ease-in-out infinite"></div>
+        <span style="font-family:var(--fm);font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--g)">AI Factory Deployment Sequence — Live Simulation</span>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button id="aif-play" onclick="aifControl('play')" style="font-family:var(--fm);font-size:.65rem;letter-spacing:.1em;padding:5px 14px;border:1px solid rgba(118,185,0,.4);background:rgba(118,185,0,.08);color:var(--g);border-radius:2px;cursor:pointer;text-transform:uppercase;transition:all .2s" onmouseover="this.style.background='rgba(118,185,0,.2)'" onmouseout="this.style.background='rgba(118,185,0,.08)'">PLAY</button>
+        <button id="aif-reset" onclick="aifControl('reset')" style="font-family:var(--fm);font-size:.65rem;letter-spacing:.1em;padding:5px 14px;border:1px solid rgba(118,185,0,.2);background:transparent;color:var(--muted);border-radius:2px;cursor:pointer;text-transform:uppercase;transition:all .2s" onmouseover="this.style.color='var(--g)'" onmouseout="this.style.color='var(--muted)'">RESET</button>
+      </div>
+    </div>
+
+    <!-- Animation canvas -->
+    <canvas id="aif-canvas" style="width:100%;display:block"></canvas>
+
+    <!-- Step indicators -->
+    <div style="display:flex;border-top:1px solid rgba(118,185,0,.12);overflow:hidden" id="aif-steps-bar">
+      <div class="aif-step-ind" data-step="0" style="flex:1;padding:10px 8px;text-align:center;border-right:1px solid rgba(118,185,0,.1);cursor:pointer;transition:all .3s">
+        <div style="font-size:.85rem;margin-bottom:3px">📋</div>
+        <div style="font-family:var(--fm);font-size:.6rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase">Assess</div>
+      </div>
+      <div class="aif-step-ind" data-step="1" style="flex:1;padding:10px 8px;text-align:center;border-right:1px solid rgba(118,185,0,.1);cursor:pointer;transition:all .3s">
+        <div style="font-size:.85rem;margin-bottom:3px">🏗</div>
+        <div style="font-family:var(--fm);font-size:.6rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase">Blueprint</div>
+      </div>
+      <div class="aif-step-ind" data-step="2" style="flex:1;padding:10px 8px;text-align:center;border-right:1px solid rgba(118,185,0,.1);cursor:pointer;transition:all .3s">
+        <div style="font-size:.85rem;margin-bottom:3px">📦</div>
+        <div style="font-family:var(--fm);font-size:.6rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase">Deploy HW</div>
+      </div>
+      <div class="aif-step-ind" data-step="3" style="flex:1;padding:10px 8px;text-align:center;border-right:1px solid rgba(118,185,0,.1);cursor:pointer;transition:all .3s">
+        <div style="font-size:.85rem;margin-bottom:3px">⚙</div>
+        <div style="font-family:var(--fm);font-size:.6rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase">Install SW</div>
+      </div>
+      <div class="aif-step-ind" data-step="4" style="flex:1;padding:10px 8px;text-align:center;border-right:1px solid rgba(118,185,0,.1);cursor:pointer;transition:all .3s">
+        <div style="font-size:.85rem;margin-bottom:3px">🚀</div>
+        <div style="font-family:var(--fm);font-size:.6rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase">Train LLM</div>
+      </div>
+      <div class="aif-step-ind" data-step="5" style="flex:1;padding:10px 8px;text-align:center;border-right:1px solid rgba(118,185,0,.1);cursor:pointer;transition:all .3s">
+        <div style="font-size:.85rem;margin-bottom:3px">⚡</div>
+        <div style="font-family:var(--fm);font-size:.6rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase">Optimise</div>
+      </div>
+      <div class="aif-step-ind" data-step="6" style="flex:1;padding:10px 8px;text-align:center;cursor:pointer;transition:all .3s">
+        <div style="font-size:.85rem;margin-bottom:3px">🏭</div>
+        <div style="font-family:var(--fm);font-size:.6rem;letter-spacing:.08em;color:var(--muted);text-transform:uppercase">Go Live</div>
+      </div>
+    </div>
+  </div>
 </div>
+</section>
+
+<script>
+/* AI FACTORY BUILD ANIMATION v2 - larger canvas, bigger text, no overlaps, B200/B300 GPUs */
+(function() {
+  var cv  = document.getElementById('aif-canvas');
+  var ctx = cv.getContext('2d');
+  var G = '118,185,0';
+  var C = '0,196,220';
+  /* Taller canvas - was 320, now 480 */
+  var W_BASE = 1200, H_BASE = 600;
+  var W, H, sc;
+  var currentStep = -1;
+  var stepProg = 0;
+  var animId = null;
+  var isPlaying = false;
+  var stepTimer = null;
+
+  /* roundRect polyfill */
+  function rrect(x,y,w,h,r) {
+    r = r || 4;
+    ctx.beginPath();
+    ctx.moveTo(x+r,y); ctx.lineTo(x+w-r,y); ctx.quadraticCurveTo(x+w,y,x+w,y+r);
+    ctx.lineTo(x+w,y+h-r); ctx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
+    ctx.lineTo(x+r,y+h); ctx.quadraticCurveTo(x,y+h,x,y+h-r);
+    ctx.lineTo(x,y+r); ctx.quadraticCurveTo(x,y,x+r,y);
+    ctx.closePath();
+  }
+
+  function sv(v) { return v * sc; }
+
+  function resize() {
+    var rect = cv.parentElement.getBoundingClientRect();
+    W = cv.width  = Math.floor(rect.width);
+    H = cv.height = Math.floor(rect.width * H_BASE / W_BASE);
+    sc = W / W_BASE;
+    if (currentStep >= 0) STEPS[currentStep].draw(stepProg);
+    else drawIdle();
+  }
+
+  function clr() { ctx.clearRect(0,0,W,H); }
+
+  function box(x,y,w,h,fill,stroke,sw,r) {
+    rrect(sv(x),sv(y),sv(w),sv(h), r !== undefined ? r : sv(3));
+    ctx.fillStyle = fill; ctx.fill();
+    if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = sw||1; ctx.stroke(); }
+  }
+
+  /* txt: size is in W_BASE units, size 10 = 10/1200 of canvas width */
+  function txt(text, x, y, size, color, align, style) {
+    ctx.font = (style === 'cond')
+      ? ('800 ' + sv(size*2.1) + 'px "Barlow Condensed",sans-serif')
+      : (sv(size*1.6) + 'px "DM Mono",monospace');
+    ctx.fillStyle = color;
+    ctx.textAlign = align || 'center';
+    ctx.fillText(text, sv(x), sv(y));
+  }
+
+  function gLine(x1,y1,x2,y2,col,a,lw) {
+    ctx.shadowColor = 'rgba('+col+','+(Math.min(1,a*2))+')';
+    ctx.shadowBlur  = sv(4);
+    ctx.strokeStyle = 'rgba('+col+','+a+')';
+    ctx.lineWidth   = sv(lw||1);
+    ctx.beginPath(); ctx.moveTo(sv(x1),sv(y1)); ctx.lineTo(sv(x2),sv(y2)); ctx.stroke();
+    ctx.shadowBlur  = 0;
+  }
+
+  function grid() {
+    ctx.strokeStyle='rgba(118,185,0,0.035)'; ctx.lineWidth=0.5;
+    for(var x=0;x<W_BASE;x+=80){ctx.beginPath();ctx.moveTo(sv(x),0);ctx.lineTo(sv(x),H);ctx.stroke();}
+    for(var y=0;y<H_BASE;y+=40){ctx.beginPath();ctx.moveTo(0,sv(y));ctx.lineTo(W,sv(y));ctx.stroke();}
+  }
+
+  function setStepUI(step) {
+    var el = document.getElementById('aif-step-label');
+    if (el) el.textContent = STEPS[step].label;
+    var inds = document.querySelectorAll('.aif-step-ind');
+    for (var i=0; i<inds.length; i++) {
+      inds[i].style.background    = i<=step ? 'rgba(118,185,0,0.1)' : 'transparent';
+      inds[i].style.borderBottom  = i===step ? '2px solid #76b900' : '2px solid transparent';
+      var lbl = inds[i].querySelector('div:last-child');
+      if (lbl) lbl.style.color = i<=step ? '#76b900' : '';
+    }
+  }
+
+  /* ================================================================
+     STEP DRAW FUNCTIONS  (H_BASE=480, text ~1.5x bigger than before)
+  ================================================================ */
+
+  function drawIdle() {
+    clr(); grid();
+    ctx.fillStyle = 'rgba(118,185,0,0.2)';
+    ctx.font = sv(13)+'px "DM Mono",monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('Press PLAY to simulate how Debjit builds your AI Factory', sv(600), sv(245));
+    /* subtle GPU chip icon */
+    box(545,205,110,60,'rgba(118,185,0,0.04)','rgba(118,185,0,0.15)',1,sv(4));
+    txt('DGX B200', 600, 228, 11, 'rgba(118,185,0,0.25)', 'center', 'cond');
+    txt('AI Factory', 600, 245, 9, 'rgba(118,185,0,0.15)', 'center');
+  }
+
+  /* ---- Step 1: Assess ---- */
+  function drawAssess(p) {
+    clr(); grid();
+    txt('STEP 01 - REQUIREMENT ASSESSMENT', 600, 36, 11, 'rgba(118,185,0,0.6)', 'center');
+
+    /* Client box */
+    box(40,70,240,310,'rgba(30,50,70,0.85)','rgba(118,185,0,0.35)',1.5);
+    txt('ENTERPRISE CLIENT', 160, 100, 12, 'rgba(118,185,0,0.8)', 'center', 'cond');
+    txt('Workload Requirements:', 55, 128, 9, 'rgba(118,185,0,0.55)', 'left');
+    txt('LLM Training (70B+ params)', 55, 152, 9, 'rgba(200,240,200,0.8)', 'left');
+    txt('24/7 Inference Endpoints', 55, 172, 9, 'rgba(200,240,200,0.8)', 'left');
+    txt('RAG + Agentic AI Pipelines', 55, 192, 9, 'rgba(200,240,200,0.8)', 'left');
+    txt('50TB+ training datasets', 55, 212, 9, 'rgba(200,240,200,0.8)', 'left');
+    txt('Scale to 1000+ users/day', 55, 232, 9, 'rgba(200,240,200,0.8)', 'left');
+    txt('Sub-100ms latency SLA', 55, 252, 9, 'rgba(200,240,200,0.8)', 'left');
+    txt('99.9% uptime requirement', 55, 272, 9, 'rgba(200,240,200,0.75)', 'left');
+    txt('Multi-tenant GPU sharing', 55, 292, 9, 'rgba(200,240,200,0.7)', 'left');
+    txt('Compliance & data security', 55, 312, 9, 'rgba(200,240,200,0.65)', 'left');
+    txt('Cost-optimal infra plan', 55, 332, 9, 'rgba(200,240,200,0.6)', 'left');
+
+    /* Debjit box */
+    if (p > 0.28) {
+      var a1 = Math.min((p-0.28)/0.35, 1);
+      ctx.globalAlpha = a1;
+      box(490,70,240,310,'rgba(118,185,0,0.08)','rgba(118,185,0,0.65)',2);
+      txt('DEBJIT CHOWDHURY', 610, 100, 12, '#76b900', 'center', 'cond');
+      txt('AI Solutions Architect', 610, 120, 9, 'rgba(118,185,0,0.6)', 'center');
+      txt('NVIDIA Certified:', 505, 148, 9, 'rgba(118,185,0,0.55)', 'left');
+      txt('AI Technical Curriculum', 505, 170, 9, 'rgba(168,224,0,0.9)', 'left');
+      txt('DGX AI Compute Systems', 505, 190, 9, 'rgba(168,224,0,0.9)', 'left');
+      txt('DGX Installation Cert', 505, 210, 9, 'rgba(168,224,0,0.9)', 'left');
+      txt('Compute Technical', 505, 230, 9, 'rgba(168,224,0,0.9)', 'left');
+      txt('Networking Curriculum', 505, 250, 9, 'rgba(168,224,0,0.9)', 'left');
+      txt('Company:', 505, 280, 9, 'rgba(118,185,0,0.55)', 'left');
+      txt('Micropoint Computers', 505, 300, 9, 'rgba(200,240,200,0.75)', 'left');
+      txt('NVIDIA Elite Partner', 505, 320, 9, 'rgba(200,240,200,0.65)', 'left');
+      ctx.globalAlpha = 1;
+    }
+
+    /* Arrow */
+    if (p > 0.52) {
+      var a2 = Math.min((p-0.52)/0.28, 1);
+      ctx.globalAlpha = a2;
+      gLine(280,225,490,225,G,0.65,2);
+      ctx.fillStyle='rgba('+G+',0.75)';
+      ctx.beginPath();ctx.moveTo(sv(490),sv(225));ctx.lineTo(sv(480),sv(219));ctx.lineTo(sv(480),sv(231));ctx.closePath();ctx.fill();
+      txt('Requirement', 385, 215, 9, 'rgba(118,185,0,0.75)', 'center');
+      txt('Assessment', 385, 232, 9, 'rgba(118,185,0,0.75)', 'center');
+      ctx.globalAlpha = 1;
+    }
+
+    /* Scope result box */
+    if (p > 0.73) {
+      var a3 = Math.min((p-0.73)/0.27, 1);
+      ctx.globalAlpha = a3;
+      box(768,70,400,310,'rgba(10,30,10,0.88)','rgba(118,185,0,0.45)',1.5);
+      txt('SCOPE DEFINED', 968, 100, 13, 'rgba(118,185,0,1)', 'center', 'cond');
+      txt('GPU: 8x DGX B200 nodes (64 GPUs)', 782, 130, 9, 'rgba(200,240,200,0.85)', 'left');
+      txt('Memory: 11.5TB HBM3e total', 782, 152, 9, 'rgba(200,240,200,0.85)', 'left');
+      txt('Compute: 1.44 ExaFLOPS AI perf', 782, 172, 9, 'rgba(200,240,200,0.85)', 'left');
+      txt('Network: InfiniBand NDR 400G', 782, 192, 9, 'rgba(200,240,200,0.85)', 'left');
+      txt('Storage: 2PB+ parallel filesystem', 782, 212, 9, 'rgba(200,240,200,0.85)', 'left');
+      txt('SW: NeMo + TRT-LLM + Triton', 782, 232, 9, 'rgba(200,240,200,0.85)', 'left');
+      txt('Security: Data isolation + audit', 782, 252, 9, 'rgba(200,240,200,0.75)', 'left');
+      txt('Timeline: 6-8 weeks full deploy', 782, 272, 9, 'rgba(118,185,0,0.7)', 'left');
+      txt('Partner: Micropoint / NVIDIA', 782, 296, 9, 'rgba(118,185,0,0.6)', 'left');
+      ctx.globalAlpha = 1;
+    }
+
+    txt(STEPS[0].desc, 600, 455, 8.5, 'rgba(180,215,225,0.6)', 'center');
+  }
+
+  /* ---- Step 2: Blueprint ---- */
+  function drawBlueprint(p) {
+    clr(); grid();
+    txt('STEP 02 - AI FACTORY BLUEPRINT DESIGN', 600, 36, 11, 'rgba(118,185,0,0.6)', 'center');
+
+    /* Spine switch */
+    box(520,50,160,50,'rgba(0,100,120,0.35)','rgba(0,196,220,0.6)',1.5);
+    txt('SPINE SWITCH', 600, 70, 10, 'rgba(0,196,220,0.9)', 'center', 'cond');
+    txt('InfiniBand NDR 400G', 600, 86, 8, 'rgba(0,196,220,0.6)', 'center');
+
+    var leafX=[100,270,440,610,780,950];
+    var visLeaf = Math.min(leafX.length, Math.floor(p*8));
+    for (var i=0; i<visLeaf; i++) {
+      var lx=leafX[i];
+      box(lx-58,135,116,44,'rgba(0,80,100,0.35)','rgba(0,196,220,0.4)',1);
+      txt('LEAF '+(i+1), lx, 152, 9, 'rgba(0,196,220,0.75)', 'center', 'cond');
+      txt('400G port', lx, 168, 7.5, 'rgba(0,196,220,0.45)', 'center');
+      gLine(lx,135,600,100,C,0.3,0.8);
+    }
+
+    var visDGX = Math.min(leafX.length, Math.floor(p*10));
+    for (var j=0; j<visDGX; j++) {
+      var dx=leafX[j];
+      box(dx-55,230,110,100,'rgba(118,185,0,0.09)','rgba(118,185,0,0.45)',1.2);
+      txt('DGX B200', dx, 252, 10, '#76b900', 'center', 'cond');
+      txt('8x B200 GPUs', dx, 268, 8, 'rgba(118,185,0,0.55)', 'center');
+      txt('NVLink 5.0', dx, 284, 8, 'rgba(0,196,220,0.5)', 'center');
+      txt('180GB HBM3', dx, 300, 7.5, 'rgba(118,185,0,0.45)', 'center');
+      txt('4TB/s BW', dx, 315, 7.5, 'rgba(118,185,0,0.4)', 'center');
+      gLine(dx,230,dx,179,G,0.4,1);
+    }
+
+    if (p > 0.68) {
+      var a=Math.min((p-0.68)/0.32,1);
+      ctx.globalAlpha=a;
+      box(1060,140,120,180,'rgba(40,20,80,0.35)','rgba(118,185,0,0.35)',1);
+      txt('STORAGE', 1120, 162, 10, 'rgba(118,185,0,0.8)', 'center', 'cond');
+      txt('2PB+ GPFS', 1120, 182, 9, 'rgba(118,185,0,0.6)', 'center');
+      txt('Lustre / NFS', 1120, 200, 8, 'rgba(118,185,0,0.5)', 'center');
+      txt('Parallel I/O', 1120, 217, 8, 'rgba(118,185,0,0.45)', 'center');
+      txt('100 GB/s read', 1120, 234, 8, 'rgba(118,185,0,0.4)', 'center');
+      txt('50 GB/s write', 1120, 250, 8, 'rgba(118,185,0,0.4)', 'center');
+      txt('Hot / Cold tiers', 1120, 267, 8, 'rgba(118,185,0,0.35)', 'center');
+      ctx.globalAlpha=1;
+    }
+
+    txt(STEPS[1].desc, 600, 455, 8.5, 'rgba(180,215,225,0.6)', 'center');
+  }
+
+  /* ---- Step 3: Hardware ---- */
+  function drawHardware(p) {
+    clr(); grid();
+    txt('STEP 03 - DGX HARDWARE DEPLOYMENT', 600, 36, 11, 'rgba(118,185,0,0.6)', 'center');
+
+    var nW=126, nH=140, x0=26, gap=10, total=8;
+    var visible=Math.min(total, Math.ceil(p*total*1.2));
+    for (var i=0; i<visible; i++) {
+      var nx=x0+i*(nW+gap);
+      var pr=Math.min(1, p*total*1.2-i);
+      ctx.globalAlpha=pr;
+      box(nx,56,nW,nH,'rgba(10,20,30,0.92)','rgba(118,185,0,0.55)',1.5);
+      txt('DGX B200 #'+(i+1), nx+nW/2, 74, 9, '#76b900', 'center', 'cond');
+      /* 8 GPU cells 2x4 */
+      var cw=23, ch=18, cx0=nx+7, cy0=86;
+      for (var r=0; r<2; r++) {
+        for (var cc=0; cc<4; cc++) {
+          box(cx0+cc*(cw+4), cy0+r*(ch+5), cw, ch, 'rgba(118,185,0,0.28)', 'rgba(118,185,0,0.55)', 0.8, sv(1.5));
+          txt('B'+(r*4+cc), cx0+cc*(cw+4)+cw/2, cy0+r*(ch+5)+12, 6, 'rgba(118,185,0,0.8)', 'center');
+        }
+      }
+      txt('NVLink 5.0', nx+nW/2, 162, 7.5, 'rgba(0,196,220,0.6)', 'center');
+      txt('180GB HBM3', nx+nW/2, 175, 7.5, 'rgba(118,185,0,0.5)', 'center');
+      txt('4TB/s BW', nx+nW/2, 188, 7.5, 'rgba(118,185,0,0.45)', 'center');
+      ctx.globalAlpha=1;
+    }
+
+    if (p > 0.82) {
+      var a=Math.min((p-0.82)/0.18,1);
+      ctx.globalAlpha=a;
+      box(x0, 208, visible*(nW+gap)-gap, 24, 'rgba(0,100,120,0.35)', 'rgba(0,196,220,0.6)', 1.5);
+      txt('NVSwitch Fabric  -  NVLink 5.0  -  1.8 TB/s All-to-All Bandwidth', x0+(visible*(nW+gap))/2, 223, 8.5, 'rgba(0,196,220,0.85)', 'center');
+      ctx.globalAlpha=1;
+    }
+
+    /* InfiniBand line at bottom */
+    if (p > 0.9) {
+      var a2=Math.min((p-0.9)/0.1,1);
+      ctx.globalAlpha=a2;
+      box(x0, 244, visible*(nW+gap)-gap, 22, 'rgba(0,60,100,0.3)', 'rgba(0,196,220,0.4)', 1);
+      txt('InfiniBand NDR 400G  -  Cluster Interconnect', x0+(visible*(nW+gap))/2, 258, 8, 'rgba(0,196,220,0.65)', 'center');
+      ctx.globalAlpha=1;
+    }
+
+    /* Power/specs footer */
+    txt('Per Node: 2.0 ExaFLOPS FP4  |  180GB HBM3 x8  |  Power: 10.2kW', 600, 310, 8.5, 'rgba(118,185,0,0.45)', 'center');
+    txt('Cluster Total: 16 ExaFLOPS FP4  |  1.44 TB HBM3  |  64 B200 GPUs', 600, 330, 8.5, 'rgba(118,185,0,0.4)', 'center');
+
+    txt(STEPS[2].desc, 600, 455, 8.5, 'rgba(180,215,225,0.6)', 'center');
+  }
+
+  /* ---- Step 4: Software ---- */
+  function drawSoftware(p) {
+    clr(); grid();
+    txt('STEP 04 - SOFTWARE STACK INSTALLATION', 600, 36, 11, 'rgba(118,185,0,0.6)', 'center');
+
+    var layers=[
+      {n:'NVIDIA NIM APIs',          s:'Production Endpoints & Microservices',    gc:'rgba(118,185,0,0.95)', bg:'rgba(118,185,0,0.13)', br:'rgba(118,185,0,0.65)'},
+      {n:'Triton Inference Server',   s:'Dynamic Batching  -  gRPC  -  REST',      gc:'rgba(0,196,220,0.9)',  bg:'rgba(0,120,160,0.09)', br:'rgba(0,196,220,0.55)'},
+      {n:'TensorRT-LLM',             s:'FP8/INT4 Quant  -  Kernel Fusion',         gc:'rgba(0,196,220,0.85)', bg:'rgba(0,100,140,0.07)', br:'rgba(0,196,220,0.48)'},
+      {n:'NeMo Framework',           s:'Training  -  Fine-tuning  -  PEFT/LoRA',  gc:'rgba(118,185,0,0.85)', bg:'rgba(118,185,0,0.08)', br:'rgba(118,185,0,0.45)'},
+      {n:'Base Command Platform',    s:'AI Workload Orchestration & Scheduling',  gc:'rgba(118,185,0,0.78)', bg:'rgba(118,185,0,0.06)', br:'rgba(118,185,0,0.38)'},
+      {n:'CUDA 12 + cuDNN + NCCL',   s:'GPU Acceleration Core Layer',             gc:'rgba(118,185,0,0.72)', bg:'rgba(118,185,0,0.05)', br:'rgba(118,185,0,0.32)'},
+      {n:'DGX OS + NV Drivers',      s:'Base System Layer',                        gc:'rgba(118,185,0,0.62)', bg:'rgba(20,40,20,0.3)',   br:'rgba(118,185,0,0.26)'}
+    ];
+
+    var lh=44, y0=415, lw=860, lx=170;
+    var vis=Math.min(layers.length, Math.ceil(p*layers.length*1.35));
+    for (var i=0; i<vis; i++) {
+      var ly=y0-i*lh;
+      var pr=Math.min(1, p*layers.length*1.35-i);
+      ctx.globalAlpha=pr;
+      var lay=layers[i];
+      box(lx, ly-36, lw, 38, lay.bg, lay.br, 1.3, sv(2));
+      txt(lay.n, lx+16, ly-14, 10.5, lay.gc, 'left', 'cond');
+      txt(lay.s, lx+lw-12, ly-14, 8, lay.gc.replace(/[\d.]+\)$/,'0.48)'), 'right');
+      /* install bar */
+      var bx=lx+320, bw=200;
+      ctx.fillStyle='rgba(118,185,0,0.08)'; ctx.fillRect(sv(bx),sv(ly-31),sv(bw),sv(20));
+      ctx.fillStyle=lay.br; ctx.fillRect(sv(bx),sv(ly-31),sv(bw*pr),sv(20));
+      txt('INSTALLED', bx+bw/2, ly-17, 8, 'rgba(168,224,0,0.9)', 'center');
+      ctx.globalAlpha=1;
+    }
+    txt(STEPS[3].desc, 600, 455, 8.5, 'rgba(180,215,225,0.6)', 'center');
+  }
+
+  /* ---- Step 5: Training ---- */
+  function drawTraining(p) {
+    clr(); grid();
+    txt('STEP 05 - DISTRIBUTED LLM TRAINING', 600, 36, 11, 'rgba(118,185,0,0.6)', 'center');
+
+    /* Loss curve */
+    var plotX=60, plotY=60, plotW=520, plotH=330, steps=100;
+    ctx.save();
+    ctx.strokeStyle='rgba('+G+',0.8)'; ctx.lineWidth=sv(2);
+    ctx.shadowColor='rgba('+G+',0.45)'; ctx.shadowBlur=sv(5);
+    ctx.beginPath();
+    var drawn=Math.floor(p*steps);
+    for (var i=0; i<=drawn; i++) {
+      var px=plotX+plotW*(i/steps);
+      var loss=0.10+2.8*Math.exp(-i/18)+0.15*Math.sin(i*0.5)*Math.exp(-i/30);
+      var py=plotY+plotH*(1-Math.min(loss/3.2,0.99));
+      if(i===0) ctx.moveTo(sv(px),sv(py)); else ctx.lineTo(sv(px),sv(py));
+    }
+    ctx.stroke(); ctx.shadowBlur=0; ctx.restore();
+    /* axes */
+    gLine(plotX,plotY,plotX,plotY+plotH,G,0.3,1);
+    gLine(plotX,plotY+plotH,plotX+plotW,plotY+plotH,G,0.3,1);
+    txt('Training Loss', plotX+plotW/2, plotY+plotH+22, 9, 'rgba(118,185,0,0.55)', 'center');
+    txt('3.0', plotX-8, plotY+14, 8, 'rgba(118,185,0,0.4)', 'right');
+    txt('0.1', plotX-8, plotY+plotH-4, 8, 'rgba(118,185,0,0.4)', 'right');
+    txt('Loss', plotX-8, plotY+plotH/2, 9, 'rgba(118,185,0,0.4)', 'right');
+
+    /* live stats */
+    if (p>0.35) {
+      ctx.globalAlpha=Math.min((p-0.35)/0.25,1);
+      txt('Epoch '+(Math.floor(p*4)+1)+'/4   Tokens: '+(p*420).toFixed(1)+'B   Loss: '+(0.12+2.6*Math.exp(-p*4.5)).toFixed(3), plotX+plotW/2, plotY-12, 9, 'rgba(118,185,0,0.85)', 'center');
+      ctx.globalAlpha=1;
+    }
+
+    /* GPU util panel */
+    var mX=640, mY=60, mW=520, mH=330;
+    box(mX,mY,mW,mH,'rgba(10,20,30,0.85)','rgba(118,185,0,0.28)',1.2);
+    txt('CLUSTER UTILISATION', mX+mW/2, mY+24, 10.5, 'rgba(118,185,0,0.82)', 'center', 'cond');
+
+    var gpuU=[97,96,98,95,97,96,99,94];
+    var rowH=(mH-50)/8;
+    for (var g=0; g<8; g++) {
+      var gy=mY+44+g*rowH;
+      txt('B200 GPU '+g, mX+12, gy+rowH*0.62, 9, 'rgba(118,185,0,0.6)', 'left');
+      var bx2=mX+110, bw2=mW-140;
+      var util=(gpuU[g]/100)*p;
+      ctx.fillStyle='rgba(118,185,0,0.08)'; ctx.fillRect(sv(bx2),sv(gy+2),sv(bw2),sv(rowH*0.7));
+      ctx.fillStyle=util>0.9?'rgba('+G+',0.85)':'rgba('+G+','+(0.4+util*0.45)+')';
+      ctx.fillRect(sv(bx2),sv(gy+2),sv(bw2*util),sv(rowH*0.7));
+      txt(Math.round(gpuU[g]*p)+'%', mX+bw2+116, gy+rowH*0.62, 8.5, 'rgba(118,185,0,0.7)', 'right');
+    }
+
+    txt(STEPS[4].desc, 600, 455, 8.5, 'rgba(180,215,225,0.6)', 'center');
+  }
+
+  /* ---- Step 6: Optimise ---- */
+  function drawOptimise(p) {
+    clr(); grid();
+    txt('STEP 06 - TENSORRT-LLM OPTIMISATION', 600, 36, 11, 'rgba(118,185,0,0.6)', 'center');
+
+    var stages=[
+      {l:'BASE MODEL',        mem:'280GB', lat:'2400ms', tput:'12',  c:'rgba(118,185,0,0.42)'},
+      {l:'+ INT8 QUANT',      mem:'140GB', lat:'1200ms', tput:'28',  c:'rgba(118,185,0,0.62)'},
+      {l:'+ KERNEL FUSION',   mem:'140GB', lat:'680ms',  tput:'52',  c:'rgba(118,185,0,0.78)'},
+      {l:'+ IN-FLIGHT BATCH', mem:'140GB', lat:'210ms',  tput:'180', c:'rgba(118,185,0,0.92)'},
+      {l:'TRT-LLM FINAL',     mem:'70GB',  lat:'95ms',   tput:'420', c:'#76b900'}
+    ];
+
+    /* 5 stage boxes across full width with clear gap for badge on right */
+    var bw=188, bh=250, gapX=20, sx=30;
+    /* total width of 5 boxes: 5*188 + 4*20 = 1020, leaving 180 for badge */
+    var vis=Math.min(stages.length, Math.ceil(p*6));
+    for (var i=0; i<vis; i++) {
+      var pr=Math.min(1,p*6-i);
+      ctx.globalAlpha=pr;
+      var bx=sx+i*(bw+gapX);
+      var st=stages[i];
+      box(bx,58,bw,bh,'rgba(10,25,15,0.88)',st.c,1.5,sv(3));
+
+      txt(st.l,      bx+bw/2, 84,  10.5, st.c, 'center', 'cond');
+
+      txt('Memory',  bx+bw/2, 118, 8.5, 'rgba(180,215,180,0.55)', 'center');
+      txt(st.mem,    bx+bw/2, 142, 15,  st.c, 'center', 'cond');
+
+      txt('Latency',   bx+bw/2, 172, 8.5, 'rgba(180,215,180,0.55)', 'center');
+      txt(st.lat,      bx+bw/2, 196, 15,  st.c, 'center', 'cond');
+
+      txt('Tokens/s',  bx+bw/2, 226, 8.5, 'rgba(180,215,180,0.55)', 'center');
+      txt(st.tput,     bx+bw/2, 250, 15,  st.c, 'center', 'cond');
+
+      /* arrow to next */
+      if (i<stages.length-1) gLine(bx+bw,58+bh/2,bx+bw+gapX,58+bh/2,G,0.55,1.5);
+      ctx.globalAlpha=1;
+    }
+
+    /* 35x badge - placed BELOW the stage boxes, no overlap */
+    if (p>0.82) {
+      var ab=Math.min((p-0.82)/0.18,1);
+      ctx.globalAlpha=ab;
+      box(30,328,1140,100,'rgba(118,185,0,0.07)','rgba(118,185,0,0.5)',1.5,sv(4));
+      txt('35x THROUGHPUT IMPROVEMENT', 600, 363, 16, '#76b900', 'center', 'cond');
+      txt('Base: 12 tok/s   --->   TRT-LLM Optimised: 420 tok/s   --->   35x More Tokens Per Second on NVIDIA B200', 600, 390, 9, 'rgba(118,185,0,0.7)', 'center');
+      txt('Latency reduced from 2400ms to 95ms  |  Memory footprint halved via FP8 quantisation', 600, 410, 9, 'rgba(0,196,220,0.6)', 'center');
+      ctx.globalAlpha=1;
+    }
+
+    txt(STEPS[5].desc, 600, 462, 8.5, 'rgba(180,215,225,0.6)', 'center');
+  }
+
+  /* ---- Step 7: Go Live ---- */
+  function drawGoLive(p) {
+    clr();
+    /* scan line wash */
+    for (var y=0; y<H_BASE; y+=8) {
+      ctx.fillStyle='rgba(118,185,0,'+(0.008+0.008*Math.sin(y*0.15+p*8))+')';
+      ctx.fillRect(0,sv(y),W,sv(4));
+    }
+
+    txt('STEP 07 - AI FACTORY LIVE', 600, 36, 11, 'rgba(118,185,0,0.72)', 'center');
+
+    var cx=490, cy=240;
+    /* glow */
+    var glw=ctx.createRadialGradient(sv(cx),sv(cy),0,sv(cx),sv(cy),sv(170));
+    glw.addColorStop(0,'rgba('+G+','+(0.14*p)+')'); glw.addColorStop(1,'transparent');
+    ctx.beginPath(); ctx.arc(sv(cx),sv(cy),sv(170),0,Math.PI*2); ctx.fillStyle=glw; ctx.fill();
+
+    /* central factory block */
+    box(cx-130,cy-80,260,160,'rgba(10,30,10,0.92)','rgba(118,185,0,0.85)',2.5,sv(6));
+    txt('AI FACTORY', cx, cy-48, 18, '#76b900', 'center', 'cond');
+    txt('OPERATIONAL', cx, cy-26, 11, 'rgba(118,185,0,0.9)', 'center', 'cond');
+    txt('8x DGX B200  |  64 B200 GPUs', cx, cy-4, 9, 'rgba(200,240,200,0.72)', 'center');
+    txt('16 ExaFLOPS  |  1.44 TB HBM3', cx, cy+14, 9, 'rgba(200,240,200,0.72)', 'center');
+    txt('TRT-LLM  |  Triton  |  NIM APIs', cx, cy+32, 9, 'rgba(200,240,200,0.72)', 'center');
+    txt('< 100ms P99 Latency', cx, cy+54, 9, 'rgba(118,185,0,0.8)', 'center');
+    txt('Micropoint / NVIDIA Elite Partner', cx, cy+73, 8, 'rgba(118,185,0,0.5)', 'center');
+
+    /* orbiting service boxes */
+    var svcs=[
+      {l:'NIM APIs',      l2:'Prod Endpoints', x:cx+220, y:cy-140, c:'rgba('+G+',0.88)'},
+      {l:'Triton Serve',  l2:'gRPC / REST',     x:cx+240, y:cy+60,  c:'rgba('+G+',0.78)'},
+      {l:'NeMo Train',    l2:'Fine-tune',        x:cx+60,  y:cy+185, c:'rgba('+G+',0.72)'},
+      {l:'CUDA Accel',    l2:'cuDNN / NCCL',     x:cx-200, y:cy+150, c:'rgba('+G+',0.7)'},
+      {l:'InfiniBand',    l2:'NDR Fabric',        x:cx-240, y:cy-30,  c:'rgba(0,196,220,0.75)'},
+      {l:'Base Command',  l2:'Platform',          x:cx-100, y:cy-180, c:'rgba('+G+',0.78)'}
+    ];
+    for (var i=0; i<svcs.length; i++) {
+      var a=Math.min(1,Math.max(0,(p-i*0.1)/0.22));
+      ctx.globalAlpha=a;
+      var sv2=svcs[i];
+      box(sv2.x-62,sv2.y-28,124,46,'rgba(10,30,10,0.88)',sv2.c,1.5,sv(4));
+      txt(sv2.l,  sv2.x, sv2.y-8,  10.5, sv2.c, 'center', 'cond');
+      txt(sv2.l2, sv2.x, sv2.y+8, 7.5, sv2.c.replace(/[\d.]+\)$/,'0.5)'), 'center');
+      gLine(sv2.x,sv2.y,cx+(sv2.x<cx?-130:130),cy+(sv2.y<cy?-80:80),G,0.2,0.8);
+      ctx.globalAlpha=1;
+    }
+
+    /* LIVE status panel - right side */
+    if (p > 0.65) {
+      var ap=Math.min((p-0.65)/0.2,1)*(0.75+0.25*Math.sin(Date.now()*0.005));
+      ctx.globalAlpha=ap;
+      box(820,58,340,350,'rgba(8,22,8,0.92)','rgba(118,185,0,0.65)',2,sv(4));
+      txt('LIVE STATUS', 990, 86, 13, '#76b900', 'center', 'cond');
+      var metrics=[
+        {k:'Status',        v:'OPERATIONAL'},
+        {k:'Uptime',        v:'99.97%'},
+        {k:'GPU Util',      v:'96.4%'},
+        {k:'Latency P99',   v:'87ms'},
+        {k:'Throughput',    v:'420 tok/s'},
+        {k:'Active Jobs',   v:'24'},
+        {k:'Models Served', v:'8'},
+        {k:'Partner',       v:'Micropoint'}
+      ];
+      for (var m=0; m<metrics.length; m++) {
+        var my=114+m*34;
+        box(836, my, 308, 26, 'rgba(118,185,0,0.04)', 'rgba(118,185,0,0.12)', 0.8, sv(2));
+        txt(metrics[m].k, 848, my+17, 8.5, 'rgba(118,185,0,0.55)', 'left');
+        var vc = m===0 ? '#76b900' : 'rgba(168,224,0,0.85)';
+        txt(metrics[m].v, 1148, my+17, 9, vc, 'right', m===0?'cond':undefined);
+      }
+      ctx.globalAlpha=1;
+    }
+
+    txt(STEPS[6].desc, 490, 455, 8.5, 'rgba(180,215,225,0.6)', 'center');
+  }
+
+  /* ================================================================
+     STEPS REGISTRY
+  ================================================================ */
+  var STEPS=[
+    {label:'01 - Requirement Assessment & Architecture Scoping', desc:'Debjit engages enterprise, audits GPU memory and workload requirements, defines full AI Factory scope.',          draw:drawAssess},
+    {label:'02 - AI Factory Blueprint Design',                   desc:'Full compute + storage + networking blueprint: DGX B200 nodes, NVLink 5.0, InfiniBand NDR, storage tiers.',       draw:drawBlueprint},
+    {label:'03 - DGX B200 Hardware Deployment',                  desc:'DGX B200 systems racked, cabled, NVSwitch validated. InfiniBand NDR 400G switches connected and tested.',         draw:drawHardware},
+    {label:'04 - Software Stack Installation',                   desc:'CUDA 12, NeMo, TensorRT-LLM, Triton, Base Command Platform, and Kubernetes installed and fully configured.',       draw:drawSoftware},
+    {label:'05 - Distributed LLM Training Launch',               desc:'Multi-node training launched using NeMo + NCCL. Tensor and pipeline parallelism configured across B200 nodes.',   draw:drawTraining},
+    {label:'06 - TensorRT-LLM Optimisation & Inference Tuning',  desc:'FP8 quantisation, kernel fusion, in-flight batching: 35x throughput gain. Triton deployed for production.',       draw:drawOptimise},
+    {label:'07 - AI Factory Go Live',                            desc:'Enterprise AI Factory live - LLM endpoints at scale via NVIDIA NIM APIs, <100ms P99, 99.97% uptime.',             draw:drawGoLive}
+  ];
+
+  /* ================================================================
+     ANIMATION ENGINE
+  ================================================================ */
+  function animate(targetStep, fromProg) {
+    if (animId) cancelAnimationFrame(animId);
+    isPlaying=true;
+    document.getElementById('aif-play').textContent='PAUSE';
+    var startTime=null, dur=3600;
+    function step(t) {
+      if (!isPlaying) { animId=null; return; }
+      if (!startTime) startTime=t;
+      stepProg=fromProg+Math.min((t-startTime)/dur,1)*(1-fromProg);
+      STEPS[targetStep].draw(stepProg);
+      setStepUI(targetStep);
+      currentStep=targetStep;
+      if (stepProg<1) {
+        animId=requestAnimationFrame(step);
+      } else {
+        stepProg=1; animId=null; isPlaying=false;
+        document.getElementById('aif-play').textContent='PLAY';
+        clearTimeout(stepTimer);
+        if (targetStep<STEPS.length-1) {
+          stepTimer=setTimeout(function(){ if(!isPlaying) animate(targetStep+1,0); }, 1400);
+        }
+      }
+    }
+    animId=requestAnimationFrame(step);
+  }
+
+  function aifControlFn(action) {
+    if (action==='play') {
+      clearTimeout(stepTimer);
+      if (isPlaying) {
+        isPlaying=false;
+        document.getElementById('aif-play').textContent='PLAY';
+      } else {
+        var from=currentStep<0?0:(stepProg>=1?Math.min(currentStep+1,STEPS.length-1):currentStep);
+        animate(from, stepProg>=1?0:stepProg);
+      }
+    } else if (action==='reset') {
+      clearTimeout(stepTimer);
+      if (animId) cancelAnimationFrame(animId);
+      isPlaying=false; currentStep=-1; stepProg=0;
+      document.getElementById('aif-play').textContent='PLAY';
+      var el=document.getElementById('aif-step-label');
+      if(el) el.textContent='Watch the process unfold';
+      var inds=document.querySelectorAll('.aif-step-ind');
+      for(var i=0;i<inds.length;i++){
+        inds[i].style.background='transparent';
+        inds[i].style.borderBottom='2px solid transparent';
+        var lbl=inds[i].querySelector('div:last-child');
+        if(lbl) lbl.style.color='';
+      }
+      drawIdle();
+    }
+  }
+
+  window.aifControl=aifControlFn;
+
+  /* step click handlers */
+  var inds=document.querySelectorAll('.aif-step-ind');
+  for (var i=0; i<inds.length; i++) {
+    (function(idx){ inds[idx].addEventListener('click',function(){clearTimeout(stepTimer);if(animId)cancelAnimationFrame(animId);isPlaying=false;stepProg=0;animate(idx,0);}); })(i);
+  }
+
+  window.addEventListener('resize',function(){clearTimeout(window._rszAif);window._rszAif=setTimeout(resize,100);});
+  resize();
+  setTimeout(function(){ animate(0,0); }, 700);
+})();
+
+</script>
+
+
+
 
 <!-- ══════════════════════════════════════════
      CERTIFICATIONS
@@ -854,10 +1457,10 @@ section::before{
       <div class="cc-date">Jun 25, 2025</div>
     </div>
 
-    <div class="cert-card" style="opacity:.68">
+    <div class="cert-card featured">
       <div class="cc-badge"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
-      <div class="cc-icon" style="background:rgba(118,185,0,.03)"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg></div>
-      <div class="cc-name" style="color:var(--muted)">Networking Technical Curriculum</div>
+      <div class="cc-icon"><svg viewBox="0 0 24 24"><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg></div>
+      <div class="cc-name">Networking Technical Curriculum</div>
       <div class="cc-issuer">NVIDIA Partner Network</div>
       <div class="cc-date">Jun 23, 2025</div>
     </div>
@@ -896,7 +1499,7 @@ section::before{
         <span class="chip">Multi-GPU / Multi-Node</span>
         <span class="chip">NCCL</span>
         <span class="chip">Model Parallelism</span>
-        <span class="chip">DGX H100 / H200</span>
+        <span class="chip">DGX B200 / B200</span>
       </div>
     </div>
     <div class="spec-p-right">
@@ -1006,16 +1609,16 @@ section::before{
       <line x1="66" y1="204" x2="1080" y2="204" stroke="rgba(118,185,0,0.15)" stroke-width="1" stroke-dasharray="4,3"/>
 
       <!-- LAYER 4: Hardware (y=212..258) -->
-      <!-- DGX H100/H200 nodes -->
+      <!-- DGX B200/B200 nodes -->
       <rect x="66" y="212" width="140" height="52" rx="4" fill="rgba(118,185,0,0.12)" stroke="url(#gG)" stroke-width="1.5"/>
-      <text x="136" y="230" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="1">DGX H200</text>
-      <text x="136" y="244" fill="rgba(118,185,0,0.65)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">8× H200 SXM · 141GB</text>
-      <text x="136" y="255" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NVLink 4 · NVSwitch</text>
+      <text x="136" y="230" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="1">DGX B200</text>
+      <text x="136" y="244" fill="rgba(118,185,0,0.65)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">8× B200 SXM · 180GB</text>
+      <text x="136" y="255" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NVLink 5 · NVSwitch</text>
 
       <rect x="218" y="212" width="140" height="52" rx="4" fill="rgba(118,185,0,0.09)" stroke="rgba(118,185,0,0.4)" stroke-width="1"/>
-      <text x="288" y="230" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="1">DGX H100</text>
-      <text x="288" y="244" fill="rgba(118,185,0,0.65)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">8× H100 SXM · 80GB</text>
-      <text x="288" y="255" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NVLink 4 · 600GB/s</text>
+      <text x="288" y="230" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="1">DGX B200</text>
+      <text x="288" y="244" fill="rgba(118,185,0,0.65)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">8× B200 SXM · 80GB</text>
+      <text x="288" y="255" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NVLink 5 · 600GB/s</text>
 
       <rect x="370" y="212" width="140" height="52" rx="4" fill="rgba(118,185,0,0.07)" stroke="rgba(118,185,0,0.3)" stroke-width="1"/>
       <text x="440" y="230" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="1">DGX A100</text>
@@ -1187,7 +1790,7 @@ section::before{
           <div class="stack-pill"><span class="dot dot-g"></span>Triton Server</div>
           <div class="stack-pill"><span class="dot dot-g"></span>PyTorch</div>
           <div class="stack-pill"><span class="dot dot-g"></span>Python</div>
-          <div class="stack-pill"><span class="dot dot-g"></span>DGX H100/H200</div>
+          <div class="stack-pill"><span class="dot dot-g"></span>DGX B200/B200</div>
           <div class="stack-pill"><span class="dot dot-d"></span>InfiniBand</div>
           <div class="stack-pill"><span class="dot dot-d"></span>Kubernetes</div>
           <div class="stack-pill"><span class="dot dot-d"></span>Slurm</div>
@@ -1197,91 +1800,105 @@ section::before{
     <!-- LLM Training & Inference Pipeline Diagram -->
     <div class="aif-diagram-wrap reveal" style="margin-top:28px;transition-delay:.15s">
       <div class="aif-diagram-label">Distributed LLM Training & Inference Pipeline</div>
-      <svg viewBox="0 0 900 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block">
-        <rect width="900" height="160" fill="rgba(8,17,26,.8)" rx="0"/>
+      <svg viewBox="0 0 900 340" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block">
+        <rect width="900" height="340" fill="rgba(8,17,26,.85)" rx="0"/>
 
-        <!-- Stage boxes -->
+        <!-- Stage boxes - taller, more text space -->
+
         <!-- 1: Raw Data -->
-        <rect x="18" y="40" width="118" height="80" rx="4" fill="rgba(118,185,0,0.07)" stroke="rgba(118,185,0,0.3)" stroke-width="1"/>
-        <text x="77" y="72" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing=".5">DATA</text>
-        <text x="77" y="86" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Tokenise</text>
-        <text x="77" y="97" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Preprocess</text>
-        <text x="77" y="108" fill="rgba(118,185,0,0.45)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NEMO DataLoader</text>
-        <!-- flow dot 1 -->
-        <circle cx="160" cy="80" r="4" fill="#76b900" opacity="0.9">
-          <animate attributeName="cx" values="148;164;148" dur="2.4s" repeatCount="indefinite"/>
+        <rect x="12" y="30" width="128" height="180" rx="5" fill="rgba(118,185,0,0.07)" stroke="rgba(118,185,0,0.35)" stroke-width="1.5"/>
+        <text x="76" y="66" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="18" font-weight="800" text-anchor="middle" letter-spacing="1">DATA</text>
+        <text x="76" y="94" fill="rgba(118,185,0,0.6)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">Tokenise</text>
+        <text x="76" y="113" fill="rgba(118,185,0,0.6)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">Preprocess</text>
+        <text x="76" y="132" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">Pipeline Cache</text>
+        <text x="76" y="152" fill="rgba(118,185,0,0.45)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">NeMo DataLoader</text>
+        <text x="76" y="196" fill="rgba(118,185,0,0.35)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">Stage 01</text>
+        <!-- flow dot -->
+        <circle cx="160" cy="120" r="5" fill="#76b900" opacity="0.9">
+          <animate attributeName="cx" values="145;165;145" dur="2.4s" repeatCount="indefinite"/>
           <animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite"/>
         </circle>
-        <line x1="136" y1="80" x2="162" y2="80" stroke="rgba(118,185,0,0.35)" stroke-width="1.2" stroke-dasharray="4,3"/>
+        <line x1="140" y1="120" x2="162" y2="120" stroke="rgba(118,185,0,0.4)" stroke-width="1.5" stroke-dasharray="5,3"/>
 
         <!-- 2: Distributed Training -->
-        <rect x="166" y="40" width="142" height="80" rx="4" fill="rgba(118,185,0,0.1)" stroke="rgba(118,185,0,0.45)" stroke-width="1.5"/>
-        <text x="237" y="68" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing=".5">DIST. TRAIN</text>
-        <text x="237" y="82" fill="rgba(118,185,0,0.65)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">NeMo + NCCL</text>
-        <text x="237" y="93" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Tensor / Pipeline</text>
-        <text x="237" y="104" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Parallelism</text>
-        <text x="237" y="115" fill="rgba(118,185,0,0.4)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">DGX H100/H200</text>
-
-        <circle cx="322" cy="80" r="4" fill="#76b900" opacity="0.9">
-          <animate attributeName="cx" values="310;326;310" dur="2.4s" begin="0.5s" repeatCount="indefinite"/>
+        <rect x="164" y="30" width="148" height="180" rx="5" fill="rgba(118,185,0,0.11)" stroke="rgba(118,185,0,0.5)" stroke-width="2"/>
+        <text x="238" y="64" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing=".5">DIST. TRAIN</text>
+        <text x="238" y="90" fill="rgba(118,185,0,0.7)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">NeMo + NCCL</text>
+        <text x="238" y="109" fill="rgba(118,185,0,0.6)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">Tensor / Pipeline</text>
+        <text x="238" y="128" fill="rgba(118,185,0,0.6)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">Parallelism</text>
+        <text x="238" y="148" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">Seq Parallelism</text>
+        <text x="238" y="167" fill="rgba(118,185,0,0.45)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">DGX B200 Cluster</text>
+        <text x="238" y="196" fill="rgba(118,185,0,0.4)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">Stage 02</text>
+        <circle cx="326" cy="120" r="5" fill="#76b900" opacity="0.9">
+          <animate attributeName="cx" values="311;331;311" dur="2.4s" begin="0.5s" repeatCount="indefinite"/>
           <animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="0.5s" repeatCount="indefinite"/>
         </circle>
-        <line x1="308" y1="80" x2="330" y2="80" stroke="rgba(118,185,0,0.35)" stroke-width="1.2" stroke-dasharray="4,3"/>
+        <line x1="312" y1="120" x2="328" y2="120" stroke="rgba(118,185,0,0.4)" stroke-width="1.5" stroke-dasharray="5,3"/>
 
         <!-- 3: Fine-Tune -->
-        <rect x="334" y="40" width="118" height="80" rx="4" fill="rgba(118,185,0,0.07)" stroke="rgba(118,185,0,0.3)" stroke-width="1"/>
-        <text x="393" y="72" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing=".5">FINE-TUNE</text>
-        <text x="393" y="86" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">LoRA · PEFT</text>
-        <text x="393" y="97" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">SFT · RLHF</text>
-        <text x="393" y="108" fill="rgba(118,185,0,0.45)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NeMo Customise</text>
-
-        <circle cx="466" cy="80" r="4" fill="#00c4dc" opacity="0.9">
-          <animate attributeName="cx" values="454;470;454" dur="2.4s" begin="1s" repeatCount="indefinite"/>
+        <rect x="332" y="30" width="128" height="180" rx="5" fill="rgba(118,185,0,0.07)" stroke="rgba(118,185,0,0.32)" stroke-width="1.5"/>
+        <text x="396" y="64" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing=".5">FINE-TUNE</text>
+        <text x="396" y="90" fill="rgba(118,185,0,0.6)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">LoRA / PEFT</text>
+        <text x="396" y="109" fill="rgba(118,185,0,0.6)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">SFT / RLHF</text>
+        <text x="396" y="128" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">QLoRA</text>
+        <text x="396" y="148" fill="rgba(118,185,0,0.45)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">NeMo Customise</text>
+        <text x="396" y="196" fill="rgba(118,185,0,0.35)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">Stage 03</text>
+        <circle cx="474" cy="120" r="5" fill="#00c4dc" opacity="0.9">
+          <animate attributeName="cx" values="459;479;459" dur="2.4s" begin="1s" repeatCount="indefinite"/>
           <animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="1s" repeatCount="indefinite"/>
         </circle>
-        <line x1="452" y1="80" x2="474" y2="80" stroke="rgba(0,196,220,0.35)" stroke-width="1.2" stroke-dasharray="4,3"/>
+        <line x1="460" y1="120" x2="476" y2="120" stroke="rgba(0,196,220,0.4)" stroke-width="1.5" stroke-dasharray="5,3"/>
 
-        <!-- 4: TRT-LLM Optimise -->
-        <rect x="478" y="40" width="142" height="80" rx="4" fill="rgba(0,180,200,0.07)" stroke="rgba(0,180,200,0.35)" stroke-width="1.2"/>
-        <text x="549" y="68" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing=".5">TENSORRT-LLM</text>
-        <text x="549" y="82" fill="rgba(0,196,220,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">INT4/FP8 Quant</text>
-        <text x="549" y="93" fill="rgba(0,196,220,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Kernel Fusion</text>
-        <text x="549" y="104" fill="rgba(0,196,220,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">In-flight Batching</text>
-        <text x="549" y="115" fill="rgba(0,196,220,0.4)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">Max Throughput</text>
-
-        <circle cx="634" cy="80" r="4" fill="#00c4dc" opacity="0.9">
-          <animate attributeName="cx" values="622;638;622" dur="2.4s" begin="1.5s" repeatCount="indefinite"/>
+        <!-- 4: TensorRT-LLM -->
+        <rect x="480" y="30" width="148" height="180" rx="5" fill="rgba(0,180,200,0.08)" stroke="rgba(0,180,200,0.42)" stroke-width="1.8"/>
+        <text x="554" y="62" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="16" font-weight="800" text-anchor="middle" letter-spacing=".5">TENSORRT-LLM</text>
+        <text x="554" y="88" fill="rgba(0,196,220,0.65)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">INT4 / FP8 Quant</text>
+        <text x="554" y="107" fill="rgba(0,196,220,0.65)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">Kernel Fusion</text>
+        <text x="554" y="126" fill="rgba(0,196,220,0.6)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">In-flight Batching</text>
+        <text x="554" y="146" fill="rgba(0,196,220,0.55)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">KV Cache Reuse</text>
+        <text x="554" y="166" fill="rgba(0,196,220,0.4)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">Max Throughput</text>
+        <text x="554" y="196" fill="rgba(0,196,220,0.35)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">Stage 04</text>
+        <circle cx="642" cy="120" r="5" fill="#00c4dc" opacity="0.9">
+          <animate attributeName="cx" values="627;647;627" dur="2.4s" begin="1.5s" repeatCount="indefinite"/>
           <animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="1.5s" repeatCount="indefinite"/>
         </circle>
-        <line x1="620" y1="80" x2="642" y2="80" stroke="rgba(0,196,220,0.35)" stroke-width="1.2" stroke-dasharray="4,3"/>
+        <line x1="628" y1="120" x2="644" y2="120" stroke="rgba(0,196,220,0.4)" stroke-width="1.5" stroke-dasharray="5,3"/>
 
-        <!-- 5: Triton Serve -->
-        <rect x="646" y="40" width="118" height="80" rx="4" fill="rgba(0,180,200,0.05)" stroke="rgba(0,180,200,0.25)" stroke-width="1"/>
-        <text x="705" y="72" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing=".5">TRITON</text>
-        <text x="705" y="86" fill="rgba(0,196,220,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Model Serving</text>
-        <text x="705" y="97" fill="rgba(0,196,220,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Dyn Batching</text>
-        <text x="705" y="108" fill="rgba(0,196,220,0.45)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">gRPC · REST · KV</text>
-
-        <circle cx="778" cy="80" r="4" fill="#76b900" opacity="0.9">
-          <animate attributeName="cx" values="766;782;766" dur="2.4s" begin="2s" repeatCount="indefinite"/>
+        <!-- 5: Triton -->
+        <rect x="648" y="30" width="128" height="180" rx="5" fill="rgba(0,180,200,0.06)" stroke="rgba(0,180,200,0.3)" stroke-width="1.5"/>
+        <text x="712" y="64" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing=".5">TRITON</text>
+        <text x="712" y="90" fill="rgba(0,196,220,0.6)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">Model Serving</text>
+        <text x="712" y="109" fill="rgba(0,196,220,0.6)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">Dyn Batching</text>
+        <text x="712" y="128" fill="rgba(0,196,220,0.55)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">Ensemble Pipe</text>
+        <text x="712" y="148" fill="rgba(0,196,220,0.45)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">gRPC / REST / KV</text>
+        <text x="712" y="196" fill="rgba(0,196,220,0.3)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">Stage 05</text>
+        <circle cx="790" cy="120" r="5" fill="#76b900" opacity="0.9">
+          <animate attributeName="cx" values="776;796;776" dur="2.4s" begin="2s" repeatCount="indefinite"/>
           <animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="2s" repeatCount="indefinite"/>
         </circle>
-        <line x1="764" y1="80" x2="786" y2="80" stroke="rgba(118,185,0,0.35)" stroke-width="1.2" stroke-dasharray="4,3"/>
+        <line x1="776" y1="120" x2="792" y2="120" stroke="rgba(118,185,0,0.4)" stroke-width="1.5" stroke-dasharray="5,3"/>
 
-        <!-- 6: Production API -->
-        <rect x="790" y="40" width="94" height="80" rx="4" fill="rgba(118,185,0,0.12)" stroke="rgba(118,185,0,0.5)" stroke-width="1.5"/>
-        <text x="837" y="70" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing=".5">PROD</text>
-        <text x="837" y="83" fill="rgba(118,185,0,0.7)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">NIM APIs</text>
-        <text x="837" y="94" fill="rgba(118,185,0,0.7)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Enterprise</text>
-        <text x="837" y="105" fill="rgba(118,185,0,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">SLA · Scale</text>
+        <!-- 6: Production -->
+        <rect x="796" y="30" width="96" height="180" rx="5" fill="rgba(118,185,0,0.13)" stroke="rgba(118,185,0,0.55)" stroke-width="2"/>
+        <text x="844" y="62" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing=".5">PROD</text>
+        <text x="844" y="88" fill="rgba(118,185,0,0.75)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">NIM APIs</text>
+        <text x="844" y="107" fill="rgba(118,185,0,0.7)" font-family="DM Mono,monospace" font-size="12" text-anchor="middle">Enterprise</text>
+        <text x="844" y="126" fill="rgba(118,185,0,0.65)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">SLA Targets</text>
+        <text x="844" y="146" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">Auto-scale</text>
+        <text x="844" y="196" fill="rgba(118,185,0,0.4)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">Stage 06</text>
 
-        <!-- Stage labels at bottom -->
-        <text x="77"  y="148" fill="rgba(118,185,0,0.3)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">01</text>
-        <text x="237" y="148" fill="rgba(118,185,0,0.4)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">02</text>
-        <text x="393" y="148" fill="rgba(118,185,0,0.3)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">03</text>
-        <text x="549" y="148" fill="rgba(0,196,220,0.35)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">04</text>
-        <text x="705" y="148" fill="rgba(0,196,220,0.3)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">05</text>
-        <text x="837" y="148" fill="rgba(118,185,0,0.4)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">06</text>
+        <!-- Bottom label bar -->
+        <rect x="0" y="230" width="900" height="50" fill="rgba(118,185,0,0.03)" stroke="none"/>
+        <line x1="0" y1="230" x2="900" y2="230" stroke="rgba(118,185,0,0.12)" stroke-width="1"/>
+        <text x="76"  y="260" fill="rgba(118,185,0,0.5)" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="700" text-anchor="middle">DATA INGEST</text>
+        <text x="238" y="260" fill="rgba(118,185,0,0.55)" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="700" text-anchor="middle">DIST. TRAINING</text>
+        <text x="396" y="260" fill="rgba(118,185,0,0.5)" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="700" text-anchor="middle">FINE-TUNING</text>
+        <text x="554" y="260" fill="rgba(0,196,220,0.55)" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="700" text-anchor="middle">TRT OPTIMISE</text>
+        <text x="712" y="260" fill="rgba(0,196,220,0.5)" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="700" text-anchor="middle">SERVING</text>
+        <text x="844" y="260" fill="rgba(118,185,0,0.55)" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="700" text-anchor="middle">PRODUCTION</text>
+
+        <!-- Throughput stat row -->
+        <text x="450" y="310" fill="rgba(118,185,0,0.4)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">Powered by NVIDIA B200 GPUs  |  NVLink 5.0  |  InfiniBand NDR  |  TensorRT-LLM  |  Triton Inference Server</text>
       </svg>
     </div>
     </div>
@@ -1357,68 +1974,100 @@ section::before{
   </div>
   <!-- GPU Cluster Visual Accent -->
   <div class="gpu-cluster-row reveal" style="margin-bottom:32px">
-    <svg viewBox="0 0 1160 90" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block">
-      <rect width="1160" height="90" fill="rgba(8,17,26,.6)" rx="4"/>
-      <rect width="1160" height="90" fill="none" stroke="rgba(118,185,0,.15)" stroke-width="1" rx="4"/>
-      <!-- Row of 8 GPU chips representing DGX node -->
-      <text x="18" y="20" fill="rgba(118,185,0,.4)" font-family="DM Mono,monospace" font-size="8" letter-spacing="2">DGX NODE — 8× H200 TENSOR CORE GPUs — 1.13 EXAFLOPS AI PERFORMANCE</text>
-      <!-- GPU chips -->
-      <g transform="translate(18,26)">
-        <!-- 8 GPU chips with labels -->
+    <svg viewBox="0 0 1160 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block">
+      <rect width="1160" height="200" fill="rgba(8,17,26,.75)" rx="4"/>
+      <rect width="1160" height="200" fill="none" stroke="rgba(118,185,0,.2)" stroke-width="1" rx="4"/>
+
+      <!-- Header -->
+      <text x="580" y="28" fill="rgba(118,185,0,.65)" font-family="Barlow Condensed,sans-serif" font-size="15" font-weight="800" letter-spacing="3" text-anchor="middle">DGX B200 NODE  —  8x B200 TENSOR CORE GPUs  —  16 ExaFLOPS FP4  AI PERFORMANCE</text>
+      <line x1="20" y1="36" x2="1140" y2="36" stroke="rgba(118,185,0,.15)" stroke-width="1"/>
+
+      <!-- 8 GPU chips -->
+      <g transform="translate(14,46)">
         <!-- GPU 0 -->
-        <rect x="0"   y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.12)" stroke="rgba(118,185,0,.5)" stroke-width="1.2"/>
-        <text x="60"  y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 0</text>
-        <text x="60"  y="29" fill="rgba(118,185,0,.6)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
-        <text x="60"  y="40" fill="rgba(118,185,0,.5)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <rect x="0"   y="0" width="130" height="110" rx="4" fill="rgba(118,185,0,.13)" stroke="rgba(118,185,0,.6)" stroke-width="1.5"/>
+        <text x="65"  y="22"  fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="15" font-weight="900" text-anchor="middle">B200 GPU 0</text>
+        <text x="65"  y="42"  fill="rgba(118,185,0,.65)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">180GB HBM3</text>
+        <text x="65"  y="59"  fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">4.0 TB/s BW</text>
+        <text x="65"  y="76"  fill="rgba(118,185,0,.5)"  font-family="DM Mono,monospace" font-size="10" text-anchor="middle">2.0 EF FP4</text>
+        <text x="65"  y="93"  fill="rgba(0,196,220,.45)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">NVLink 5.0</text>
+        <text x="65"  y="107" fill="rgba(118,185,0,.35)" font-family="DM Mono,monospace" font-size="9.5" text-anchor="middle">10.2kW TDP</text>
+
         <!-- GPU 1 -->
-        <rect x="131" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.09)" stroke="rgba(118,185,0,.4)" stroke-width="1"/>
-        <text x="191" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 1</text>
-        <text x="191" y="29" fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
-        <text x="191" y="40" fill="rgba(118,185,0,.45)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <rect x="143" y="0" width="130" height="110" rx="4" fill="rgba(118,185,0,.10)" stroke="rgba(118,185,0,.48)" stroke-width="1.2"/>
+        <text x="208" y="22"  fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="15" font-weight="900" text-anchor="middle">B200 GPU 1</text>
+        <text x="208" y="42"  fill="rgba(118,185,0,.6)"  font-family="DM Mono,monospace" font-size="11" text-anchor="middle">180GB HBM3</text>
+        <text x="208" y="59"  fill="rgba(118,185,0,.52)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">4.0 TB/s BW</text>
+        <text x="208" y="76"  fill="rgba(118,185,0,.47)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">2.0 EF FP4</text>
+        <text x="208" y="93"  fill="rgba(0,196,220,.42)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">NVLink 5.0</text>
+
         <!-- GPU 2 -->
-        <rect x="262" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.09)" stroke="rgba(118,185,0,.35)" stroke-width="1"/>
-        <text x="322" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 2</text>
-        <text x="322" y="29" fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
-        <text x="322" y="40" fill="rgba(118,185,0,.45)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <rect x="286" y="0" width="130" height="110" rx="4" fill="rgba(118,185,0,.10)" stroke="rgba(118,185,0,.42)" stroke-width="1.2"/>
+        <text x="351" y="22"  fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="15" font-weight="900" text-anchor="middle">B200 GPU 2</text>
+        <text x="351" y="42"  fill="rgba(118,185,0,.6)"  font-family="DM Mono,monospace" font-size="11" text-anchor="middle">180GB HBM3</text>
+        <text x="351" y="59"  fill="rgba(118,185,0,.52)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">4.0 TB/s BW</text>
+        <text x="351" y="76"  fill="rgba(118,185,0,.47)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">2.0 EF FP4</text>
+        <text x="351" y="93"  fill="rgba(0,196,220,.42)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">NVLink 5.0</text>
+
         <!-- GPU 3 -->
-        <rect x="393" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.09)" stroke="rgba(118,185,0,.35)" stroke-width="1"/>
-        <text x="453" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 3</text>
-        <text x="453" y="29" fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
-        <text x="453" y="40" fill="rgba(118,185,0,.45)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
-        <!-- NVSwitch center label -->
-        <rect x="524" y="10" width="90" height="30" rx="3" fill="rgba(0,180,200,.08)" stroke="rgba(0,180,200,.3)" stroke-width="1"/>
-        <text x="569" y="21" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="9" font-weight="700" text-anchor="middle">NVSwitch</text>
-        <text x="569" y="33" fill="rgba(0,196,220,.5)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">900GB/s</text>
+        <rect x="429" y="0" width="130" height="110" rx="4" fill="rgba(118,185,0,.10)" stroke="rgba(118,185,0,.42)" stroke-width="1.2"/>
+        <text x="494" y="22"  fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="15" font-weight="900" text-anchor="middle">B200 GPU 3</text>
+        <text x="494" y="42"  fill="rgba(118,185,0,.6)"  font-family="DM Mono,monospace" font-size="11" text-anchor="middle">180GB HBM3</text>
+        <text x="494" y="59"  fill="rgba(118,185,0,.52)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">4.0 TB/s BW</text>
+        <text x="494" y="76"  fill="rgba(118,185,0,.47)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">2.0 EF FP4</text>
+        <text x="494" y="93"  fill="rgba(0,196,220,.42)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">NVLink 5.0</text>
+
+        <!-- NVSwitch center -->
+        <rect x="572" y="22" width="110" height="66" rx="4" fill="rgba(0,180,200,.09)" stroke="rgba(0,196,220,.4)" stroke-width="1.5"/>
+        <text x="627" y="45"  fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="14" font-weight="800" text-anchor="middle">NVSwitch</text>
+        <text x="627" y="62"  fill="rgba(0,196,220,.6)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">1.8 TB/s</text>
+        <text x="627" y="78"  fill="rgba(0,196,220,.5)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">All-to-All</text>
+
         <!-- GPU 4 -->
-        <rect x="624" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.09)" stroke="rgba(118,185,0,.35)" stroke-width="1"/>
-        <text x="684" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 4</text>
-        <text x="684" y="29" fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
-        <text x="684" y="40" fill="rgba(118,185,0,.45)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <rect x="696" y="0" width="130" height="110" rx="4" fill="rgba(118,185,0,.10)" stroke="rgba(118,185,0,.42)" stroke-width="1.2"/>
+        <text x="761" y="22"  fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="15" font-weight="900" text-anchor="middle">B200 GPU 4</text>
+        <text x="761" y="42"  fill="rgba(118,185,0,.6)"  font-family="DM Mono,monospace" font-size="11" text-anchor="middle">180GB HBM3</text>
+        <text x="761" y="59"  fill="rgba(118,185,0,.52)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">4.0 TB/s BW</text>
+        <text x="761" y="76"  fill="rgba(118,185,0,.47)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">2.0 EF FP4</text>
+        <text x="761" y="93"  fill="rgba(0,196,220,.42)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">NVLink 5.0</text>
+
         <!-- GPU 5 -->
-        <rect x="755" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.09)" stroke="rgba(118,185,0,.35)" stroke-width="1"/>
-        <text x="815" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 5</text>
-        <text x="815" y="29" fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
-        <text x="815" y="40" fill="rgba(118,185,0,.45)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <rect x="839" y="0" width="130" height="110" rx="4" fill="rgba(118,185,0,.10)" stroke="rgba(118,185,0,.42)" stroke-width="1.2"/>
+        <text x="904" y="22"  fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="15" font-weight="900" text-anchor="middle">B200 GPU 5</text>
+        <text x="904" y="42"  fill="rgba(118,185,0,.6)"  font-family="DM Mono,monospace" font-size="11" text-anchor="middle">180GB HBM3</text>
+        <text x="904" y="59"  fill="rgba(118,185,0,.52)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">4.0 TB/s BW</text>
+        <text x="904" y="76"  fill="rgba(118,185,0,.47)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">2.0 EF FP4</text>
+        <text x="904" y="93"  fill="rgba(0,196,220,.42)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">NVLink 5.0</text>
+
         <!-- GPU 6 -->
-        <rect x="886" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.09)" stroke="rgba(118,185,0,.35)" stroke-width="1"/>
-        <text x="946" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 6</text>
-        <text x="946" y="29" fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
-        <text x="946" y="40" fill="rgba(118,185,0,.45)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <rect x="982" y="0" width="130" height="110" rx="4" fill="rgba(118,185,0,.10)" stroke="rgba(118,185,0,.42)" stroke-width="1.2"/>
+        <text x="1047" y="22"  fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="15" font-weight="900" text-anchor="middle">B200 GPU 6</text>
+        <text x="1047" y="42"  fill="rgba(118,185,0,.6)"  font-family="DM Mono,monospace" font-size="11" text-anchor="middle">180GB HBM3</text>
+        <text x="1047" y="59"  fill="rgba(118,185,0,.52)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">4.0 TB/s BW</text>
+        <text x="1047" y="76"  fill="rgba(118,185,0,.47)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">2.0 EF FP4</text>
+        <text x="1047" y="93"  fill="rgba(0,196,220,.42)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">NVLink 5.0</text>
+
         <!-- GPU 7 -->
-        <rect x="1017" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.12)" stroke="rgba(118,185,0,.5)" stroke-width="1.2"/>
-        <text x="1077" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 7</text>
-        <text x="1077" y="29" fill="rgba(118,185,0,.6)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
-        <text x="1077" y="40" fill="rgba(118,185,0,.5)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
-        <!-- NVLink connections (simplified lines) -->
-        <line x1="120" y1="25" x2="131" y2="25" stroke="rgba(118,185,0,.4)" stroke-width="1.5"/>
-        <line x1="251" y1="25" x2="262" y2="25" stroke="rgba(118,185,0,.35)" stroke-width="1.5"/>
-        <line x1="382" y1="25" x2="393" y2="25" stroke="rgba(118,185,0,.35)" stroke-width="1.5"/>
-        <line x1="513" y1="25" x2="524" y2="25" stroke="rgba(0,196,220,.4)" stroke-width="1.5"/>
-        <line x1="614" y1="25" x2="624" y2="25" stroke="rgba(0,196,220,.4)" stroke-width="1.5"/>
-        <line x1="744" y1="25" x2="755" y2="25" stroke="rgba(118,185,0,.35)" stroke-width="1.5"/>
-        <line x1="875" y1="25" x2="886" y2="25" stroke="rgba(118,185,0,.35)" stroke-width="1.5"/>
-        <line x1="1006" y1="25" x2="1017" y2="25" stroke="rgba(118,185,0,.4)" stroke-width="1.5"/>
+        <rect x="1002" y="0" width="130" height="110" rx="4" fill="rgba(118,185,0,.13)" stroke="rgba(118,185,0,.6)" stroke-width="1.5"/>
+        <text x="1067" y="22"  fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="15" font-weight="900" text-anchor="middle">B200 GPU 7</text>
+        <text x="1067" y="42"  fill="rgba(118,185,0,.65)" font-family="DM Mono,monospace" font-size="11" text-anchor="middle">180GB HBM3</text>
+        <text x="1067" y="59"  fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="10.5" text-anchor="middle">4.0 TB/s BW</text>
+        <text x="1067" y="76"  fill="rgba(118,185,0,.5)"  font-family="DM Mono,monospace" font-size="10" text-anchor="middle">2.0 EF FP4</text>
+        <text x="1067" y="93"  fill="rgba(0,196,220,.45)" font-family="DM Mono,monospace" font-size="10" text-anchor="middle">NVLink 5.0</text>
+
+        <!-- NVLink connections between GPUs -->
+        <line x1="130" y1="55" x2="143" y2="55" stroke="rgba(118,185,0,.5)" stroke-width="2"/>
+        <line x1="273" y1="55" x2="286" y2="55" stroke="rgba(118,185,0,.45)" stroke-width="2"/>
+        <line x1="416" y1="55" x2="429" y2="55" stroke="rgba(118,185,0,.45)" stroke-width="2"/>
+        <line x1="559" y1="55" x2="572" y2="55" stroke="rgba(0,196,220,.5)" stroke-width="2"/>
+        <line x1="682" y1="55" x2="696" y2="55" stroke="rgba(0,196,220,.5)" stroke-width="2"/>
+        <line x1="826" y1="55" x2="839" y2="55" stroke="rgba(118,185,0,.45)" stroke-width="2"/>
+        <line x1="969" y1="55" x2="982" y2="55" stroke="rgba(118,185,0,.45)" stroke-width="2"/>
       </g>
+
+      <!-- Footer stats bar -->
+      <line x1="20" y1="167" x2="1140" y2="167" stroke="rgba(118,185,0,.12)" stroke-width="1"/>
+      <text x="580" y="184" fill="rgba(118,185,0,.5)" font-family="DM Mono,monospace" font-size="11.5" text-anchor="middle">Total GPU Memory: 1.44 TB HBM3  |  Cluster: 16 ExaFLOPS FP4  |  Interconnect: NVLink 5.0 + NVSwitch  |  Fabric: InfiniBand NDR 400G</text>
     </svg>
   </div>
   <div class="value-grid stagger reveal">
@@ -1453,18 +2102,17 @@ section::before{
   <div class="footer-left">
     <img class="footer-logo" src="data:image/png;base64,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" alt="NVIDIA Elite Partner · Micropoint Computers"/>
     <div class="footer-text">
-      NVIDIA certifications verified · Darrin Chen, VP – NVIDIA Partner Network<br>
       Micropoint Computers Pvt. Ltd. · Bengaluru, India
     </div>
   </div>
-  <div class="footer-badge">Confidential — AI Factory Engagement Profile</div>
+  <div class="footer-badge">Conpyright Micropoint Computers Pvt. Ltd.</div>
 </footer>
 
 
 <script>
-/* ════════════════════════════════════════════════════
+/* ====================================================
    NEURAL NETWORK + CIRCUIT HYBRID BACKGROUND
-════════════════════════════════════════════════════ */
+==================================================== */
 (function(){
   const canvas = document.getElementById('bg-canvas');
   const ctx = canvas.getContext('2d');
@@ -1535,7 +2183,7 @@ section::before{
     nodes.forEach(n=>{
       const p=.5+.5*Math.sin(n.pulse);
       if(n.core){
-        // Core GPU chip — small glowing square with crosshair
+        // Core GPU chip -- small glowing square with crosshair
         const s=5+p*2.5;
         ctx.fillStyle=`rgba(${G},${.1+p*.08})`;
         ctx.strokeStyle=`rgba(${G},${.35+p*.25})`;
@@ -1590,9 +2238,9 @@ section::before{
   draw();
 })();
 
-/* ════════════════════════════════════════════════════
+/* ====================================================
    HAMBURGER
-════════════════════════════════════════════════════ */
+==================================================== */
 const ham = document.getElementById('hamburger');
 const mMenu = document.getElementById('mobile-menu');
 ham.addEventListener('click', () => {
@@ -1607,17 +2255,17 @@ mMenu.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', () 
   document.body.style.overflow = '';
 }));
 
-/* ════════════════════════════════════════════════════
+/* ====================================================
    SCROLL REVEAL
-════════════════════════════════════════════════════ */
+==================================================== */
 const revObs = new IntersectionObserver(es => {
   es.forEach(e => { if(e.isIntersecting) e.target.classList.add('vis'); });
 }, { threshold: 0.06 });
 document.querySelectorAll('.reveal, .stagger').forEach(el => revObs.observe(el));
 
-/* ════════════════════════════════════════════════════
+/* ====================================================
    COUNTERS
-════════════════════════════════════════════════════ */
+==================================================== */
 const cntObs = new IntersectionObserver(es => {
   es.forEach(e => {
     if(e.isIntersecting){
@@ -1637,9 +2285,9 @@ const cntObs = new IntersectionObserver(es => {
 }, { threshold: .5 });
 document.querySelectorAll('[data-count]').forEach(el => cntObs.observe(el));
 
-/* ════════════════════════════════════════════════════
+/* ====================================================
    STAT BARS
-════════════════════════════════════════════════════ */
+==================================================== */
 const sbObs = new IntersectionObserver(es => {
   es.forEach(e => {
     if(e.isIntersecting){
@@ -1650,9 +2298,9 @@ const sbObs = new IntersectionObserver(es => {
 }, { threshold: .3 });
 document.querySelectorAll('.stat-card').forEach(el => sbObs.observe(el));
 
-/* ════════════════════════════════════════════════════
+/* ====================================================
    SKILL BARS
-════════════════════════════════════════════════════ */
+==================================================== */
 const bObs = new IntersectionObserver(es => {
   es.forEach(e => {
     if(e.isIntersecting){
@@ -1663,9 +2311,9 @@ const bObs = new IntersectionObserver(es => {
 }, { threshold: .08 });
 document.querySelectorAll('.skills-wrap').forEach(el => bObs.observe(el));
 
-/* ════════════════════════════════════════════════════
+/* ====================================================
    NAV ACTIVE STATE
-════════════════════════════════════════════════════ */
+==================================================== */
 const nav = document.getElementById('nav');
 const navLinks = document.querySelectorAll('#nav .nav-link');
 const sections = document.querySelectorAll('section[id]');
