@@ -15,7 +15,7 @@
   --bg:#020507;--bg2:#050c10;--bg3:#080f14;
   --card:#08111a;--card2:#0c1824;
   --border:#0e2030;--border2:#162d40;
-  --text:#b8d4e0;--muted:#3d6070;--dim:#0e2030;
+  --text:#d4eaf5;--muted:#8ab8cc;--dim:#3a6070;
   --white:#e8f4fa;
   --fd:'Barlow Condensed',sans-serif;
   --fb:'Barlow',sans-serif;
@@ -151,7 +151,7 @@ body::before{
 /* ─ Badge eyebrow ─ */
 .hero-eyebrow{
   display:inline-flex;align-items:center;gap:10px;
-  font-family:var(--fm);font-size:.58rem;letter-spacing:.25em;
+  font-family:var(--fm);font-size:.7rem;letter-spacing:.2em;
   color:var(--g);text-transform:uppercase;margin-bottom:20px;
   padding:5px 14px;border:1px solid rgba(118,185,0,.2);
   border-radius:2px;background:rgba(118,185,0,.05);
@@ -176,7 +176,7 @@ body::before{
 
 /* ─ Role ─ */
 .hero-role{
-  font-family:var(--fd);font-size:1.3rem;font-weight:400;font-style:italic;
+  font-family:var(--fd);font-size:1.55rem;font-weight:400;font-style:italic;
   color:var(--muted);margin-bottom:20px;letter-spacing:.03em;
 }
 .hero-role strong{color:var(--text);font-weight:600;font-style:normal}
@@ -201,7 +201,7 @@ body::before{
 /* ─ Tags ─ */
 .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
 .htag{
-  font-family:var(--fm);font-size:.58rem;letter-spacing:.06em;
+  font-family:var(--fm);font-size:.7rem;letter-spacing:.06em;
   text-transform:uppercase;padding:5px 13px;border-radius:2px;
   transition:all .25s;cursor:default;
 }
@@ -283,7 +283,7 @@ body::before{
   text-transform:uppercase;color:var(--muted);
 }
 .pipe-stage-sub{
-  font-family:var(--fd);font-size:.85rem;font-weight:700;
+  font-family:var(--fd);font-size:1rem;font-weight:700;
   text-transform:uppercase;color:var(--g);letter-spacing:.05em;
 }
 .pipe-arrow{
@@ -318,12 +318,12 @@ section::before{
 .sec-hd{display:flex;align-items:center;gap:14px;margin-bottom:56px}
 .sec-num{font-family:var(--fm);font-size:.55rem;color:var(--g3);letter-spacing:.2em;flex-shrink:0}
 .sec-title{
-  font-family:var(--fd);font-size:1.7rem;font-weight:800;
+  font-family:var(--fd);font-size:2.1rem;font-weight:800;
   letter-spacing:.04em;color:var(--white);flex-shrink:0;
   text-transform:uppercase;
 }
 .sec-line{flex:1;height:1px;background:linear-gradient(to right,var(--border2),transparent)}
-.sec-sub{font-family:var(--fm);font-size:.58rem;color:var(--muted);white-space:nowrap;letter-spacing:.06em}
+.sec-sub{font-family:var(--fm);font-size:.72rem;color:var(--muted);white-space:nowrap;letter-spacing:.05em}
 
 /* ══════════════════════════════════════════════════════════
    CERTIFICATIONS
@@ -368,9 +368,9 @@ section::before{
 }
 .cert-card:hover .cc-icon{background:rgba(118,185,0,.18);border-color:rgba(118,185,0,.4);box-shadow:0 0 20px rgba(118,185,0,.2)}
 .cc-icon svg{width:18px;height:18px;stroke:var(--g);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.cc-name{font-family:var(--fd);font-size:.88rem;font-weight:700;color:var(--white);line-height:1.3;margin-bottom:8px;text-transform:uppercase;letter-spacing:.02em}
-.cc-issuer{font-family:var(--fm);font-size:.6rem;color:var(--muted);margin-bottom:4px}
-.cc-date{font-family:var(--fm);font-size:.6rem;color:var(--g);letter-spacing:.06em}
+.cc-name{font-family:var(--fd);font-size:1.05rem;font-weight:700;color:var(--white);line-height:1.3;margin-bottom:8px;text-transform:uppercase;letter-spacing:.02em}
+.cc-issuer{font-family:var(--fm);font-size:.72rem;color:var(--muted);margin-bottom:4px}
+.cc-date{font-family:var(--fm);font-size:.72rem;color:var(--g);letter-spacing:.06em}
 
 /* ══════════════════════════════════════════════════════════
    SPECIALISATIONS
@@ -393,7 +393,7 @@ section::before{
 
 .spec-tag{
   display:inline-flex;align-items:center;gap:6px;
-  font-family:var(--fm);font-size:.55rem;letter-spacing:.2em;
+  font-family:var(--fm);font-size:.68rem;letter-spacing:.16em;
   color:var(--g);text-transform:uppercase;margin-bottom:12px;
 }
 .spec-tag::before{content:'▸';font-size:.7rem}
@@ -408,14 +408,14 @@ section::before{
 .spec-icon svg{width:24px;height:24px;stroke:var(--g);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 
 .spec-h{
-  font-family:var(--fd);font-size:1.5rem;font-weight:800;
+  font-family:var(--fd);font-size:1.8rem;font-weight:800;
   color:var(--white);margin-bottom:12px;
   line-height:1.1;text-transform:uppercase;letter-spacing:.02em;
 }
-.spec-body{font-size:.8rem;color:var(--muted);line-height:1.78;font-weight:300}
+.spec-body{font-size:.97rem;color:var(--muted);line-height:1.78;font-weight:300}
 .spec-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
 .chip{
-  font-family:var(--fm);font-size:.56rem;letter-spacing:.05em;
+  font-family:var(--fm);font-size:.7rem;letter-spacing:.05em;
   padding:4px 10px;background:rgba(118,185,0,.06);
   border:1px solid rgba(118,185,0,.16);color:var(--g);border-radius:2px;
   transition:all .2s;cursor:default;
@@ -430,8 +430,8 @@ section::before{
 }
 .spec-metric:hover{background:rgba(118,185,0,.09);border-color:rgba(118,185,0,.22)}
 .sm-ico{font-size:1.1rem;flex-shrink:0;margin-top:1px}
-.sm-t{font-size:.74rem;color:var(--muted);line-height:1.45}
-.sm-t strong{display:block;color:var(--white);font-size:.76rem;margin-bottom:1px;font-weight:600}
+.sm-t{font-size:.88rem;color:var(--muted);line-height:1.45}
+.sm-t strong{display:block;color:var(--white);font-size:.9rem;margin-bottom:1px;font-weight:600}
 
 /* Sub spec grid */
 .spec-sub{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
@@ -454,7 +454,7 @@ section::before{
 .skills-wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:60px;align-items:start}
 
 .sg-label{
-  font-family:var(--fm);font-size:.55rem;letter-spacing:.2em;
+  font-family:var(--fm);font-size:.68rem;letter-spacing:.16em;
   text-transform:uppercase;color:var(--g);
   display:flex;align-items:center;gap:10px;
   margin-bottom:14px;margin-top:28px;
@@ -464,9 +464,9 @@ section::before{
 
 .skill-row{margin-bottom:13px}
 .skill-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px}
-.skill-name{font-size:.78rem;color:var(--text);font-weight:400}
+.skill-name{font-size:.91rem;color:var(--text);font-weight:400}
 .skill-name.core{color:var(--white);font-weight:600}
-.skill-pct{font-family:var(--fm);font-size:.62rem;color:var(--g)}
+.skill-pct{font-family:var(--fm);font-size:.78rem;color:var(--g)}
 .bar-track{
   height:3px;background:var(--bg3);border-radius:2px;overflow:hidden;
   position:relative;
@@ -481,13 +481,13 @@ section::before{
 .bar-fill.dim{background:linear-gradient(90deg,var(--dim),var(--g3));box-shadow:none}
 
 .tech-stack{margin-top:26px}
-.stack-title{font-family:var(--fm);font-size:.54rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:11px}
+.stack-title{font-family:var(--fm);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:11px}
 .stack-pills{display:flex;flex-wrap:wrap;gap:7px}
 .stack-pill{
   display:flex;align-items:center;gap:7px;
   padding:7px 13px;background:var(--card2);
   border:1px solid var(--border2);border-radius:3px;
-  font-size:.72rem;color:var(--text);font-weight:400;
+  font-size:.85rem;color:var(--text);font-weight:400;
   transition:all .25s;cursor:default;
 }
 .stack-pill:hover{border-color:var(--g);color:var(--white);background:rgba(118,185,0,.07)}
@@ -511,7 +511,7 @@ section::before{
 .dm-cell:hover::before{opacity:1}
 .dm-cell.hi{border-color:rgba(118,185,0,.2);background:rgba(118,185,0,.04)}
 .dm-icon{font-size:1.3rem;margin-bottom:5px;display:block}
-.dm-name{font-family:var(--fm);font-size:.6rem;color:var(--muted);line-height:1.3;letter-spacing:.03em}
+.dm-name{font-family:var(--fm);font-size:.72rem;color:var(--muted);line-height:1.3;letter-spacing:.03em}
 .dm-cell.hi .dm-name{color:var(--g)}
 
 /* ══════════════════════════════════════════════════════════
@@ -529,12 +529,12 @@ section::before{
   background:var(--bg);border:1.5px solid var(--g);transition:all .25s;
 }
 .tl-item:hover .tl-dot{background:var(--g);box-shadow:0 0 0 5px rgba(118,185,0,.12)}
-.tl-period{font-family:var(--fm);font-size:.58rem;color:var(--g);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
-.tl-title{font-family:var(--fd);font-size:1.1rem;font-weight:800;color:var(--white);margin-bottom:2px;text-transform:uppercase;letter-spacing:.03em}
-.tl-co{font-size:.74rem;color:var(--muted);margin-bottom:10px;font-weight:300}
-.tl-desc{font-size:.79rem;color:var(--muted);line-height:1.76;font-weight:300}
+.tl-period{font-family:var(--fm);font-size:.72rem;color:var(--g);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.tl-title{font-family:var(--fd);font-size:1.35rem;font-weight:800;color:var(--white);margin-bottom:2px;text-transform:uppercase;letter-spacing:.03em}
+.tl-co{font-size:.9rem;color:var(--muted);margin-bottom:10px;font-weight:300}
+.tl-desc{font-size:.97rem;color:var(--muted);line-height:1.76;font-weight:300}
 .tl-chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
-.tl-chip{font-family:var(--fm);font-size:.56rem;letter-spacing:.05em;padding:4px 10px;background:rgba(118,185,0,.06);border:1px solid rgba(118,185,0,.15);color:var(--g);border-radius:2px}
+.tl-chip{font-family:var(--fm);font-size:.7rem;letter-spacing:.05em;padding:5px 11px;background:rgba(118,185,0,.06);border:1px solid rgba(118,185,0,.15);color:var(--g);border-radius:2px}
 
 /* ══════════════════════════════════════════════════════════
    VALUE
@@ -553,8 +553,8 @@ section::before{
 .vcard:hover{border-color:rgba(118,185,0,.3);transform:translateY(-5px);box-shadow:0 18px 40px rgba(118,185,0,.09)}
 .vcard:hover::before{opacity:1}
 .vnum{font-family:var(--fm);font-size:.52rem;color:var(--dim);letter-spacing:.15em;margin-bottom:12px}
-.vtitle{font-family:var(--fd);font-size:1rem;font-weight:800;color:var(--g);margin-bottom:10px;line-height:1.2;text-transform:uppercase;letter-spacing:.02em}
-.vbody{font-size:.74rem;color:var(--muted);line-height:1.72;font-weight:300}
+.vtitle{font-family:var(--fd);font-size:1.15rem;font-weight:800;color:var(--g);margin-bottom:10px;line-height:1.2;text-transform:uppercase;letter-spacing:.02em}
+.vbody{font-size:.93rem;color:var(--muted);line-height:1.72;font-weight:300}
 
 /* ══════════════════════════════════════════════════════════
    FOOTER
@@ -623,6 +623,27 @@ section::before{
   .pipeline-inner{justify-content:center;gap:6px}
   .pipe-arrow{display:none}
 }
+
+/* AI Factory Architecture Diagram */
+.aif-diagram-wrap{
+  border:1px solid rgba(118,185,0,.2);border-radius:6px;
+  overflow:hidden;background:rgba(8,17,26,.8);
+  margin-bottom:14px;
+}
+.aif-diagram-label{
+  font-family:var(--fm);font-size:.7rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--g);
+  padding:10px 20px;
+  border-bottom:1px solid rgba(118,185,0,.15);
+  background:rgba(118,185,0,.04);
+  display:flex;align-items:center;gap:8px;
+}
+.aif-diagram-label::before{content:'◆';font-size:.6rem}
+.aif-svg{
+  width:100%;height:auto;display:block;
+  max-height:300px;
+}
+
 </style>
 </head>
 <body>
@@ -886,6 +907,188 @@ section::before{
     </div>
   </div>
 
+
+  <!-- AI FACTORY ARCHITECTURE DIAGRAM -->
+  <div class="aif-diagram-wrap reveal" style="margin-bottom:14px">
+    <div class="aif-diagram-label">AI Factory — Full Stack Architecture</div>
+    <svg class="aif-svg" viewBox="0 0 1100 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Factory Architecture Diagram">
+      <defs>
+        <linearGradient id="gG" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#3d6200"/><stop offset="100%" stop-color="#76b900"/></linearGradient>
+        <linearGradient id="gC" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#005566"/><stop offset="100%" stop-color="#00c4dc"/></linearGradient>
+        <linearGradient id="gB" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0d1f2d"/><stop offset="100%" stop-color="#091520"/></linearGradient>
+        <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+
+      <!-- Background -->
+      <rect width="1100" height="280" fill="url(#gB)" rx="6"/>
+      <rect width="1100" height="280" fill="none" stroke="rgba(118,185,0,0.2)" stroke-width="1" rx="6"/>
+
+      <!-- Layer labels on left -->
+      <text x="14" y="56" fill="rgba(118,185,0,0.5)" font-family="DM Mono,monospace" font-size="9" letter-spacing="2">APPS</text>
+      <text x="14" y="118" fill="rgba(118,185,0,0.5)" font-family="DM Mono,monospace" font-size="9" letter-spacing="2">SW</text>
+      <text x="14" y="182" fill="rgba(118,185,0,0.5)" font-family="DM Mono,monospace" font-size="9" letter-spacing="2">PLATFORM</text>
+      <text x="14" y="244" fill="rgba(118,185,0,0.5)" font-family="DM Mono,monospace" font-size="9" letter-spacing="2">HW</text>
+
+      <!-- Vertical separator -->
+      <line x1="55" y1="10" x2="55" y2="270" stroke="rgba(118,185,0,0.12)" stroke-width="1"/>
+
+      <!-- LAYER 1: Applications (y=30..76) -->
+      <rect x="66" y="28" width="150" height="40" rx="4" fill="rgba(118,185,0,0.08)" stroke="rgba(118,185,0,0.35)" stroke-width="1"/>
+      <text x="141" y="44" fill="#a8e063" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">GENERATIVE AI</text>
+      <text x="141" y="58" fill="rgba(168,224,99,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">LLM · RAG · Agents</text>
+
+      <rect x="228" y="28" width="140" height="40" rx="4" fill="rgba(118,185,0,0.06)" stroke="rgba(118,185,0,0.25)" stroke-width="1"/>
+      <text x="298" y="44" fill="#a8e063" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">AGENTIC AI</text>
+      <text x="298" y="58" fill="rgba(168,224,99,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">LangChain · AutoGen</text>
+
+      <rect x="380" y="28" width="140" height="40" rx="4" fill="rgba(118,185,0,0.06)" stroke="rgba(118,185,0,0.25)" stroke-width="1"/>
+      <text x="450" y="44" fill="#a8e063" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">ROBOTICS / SIM</text>
+      <text x="450" y="58" fill="rgba(168,224,99,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Omniverse · Isaac</text>
+
+      <rect x="532" y="28" width="140" height="40" rx="4" fill="rgba(118,185,0,0.06)" stroke="rgba(118,185,0,0.25)" stroke-width="1"/>
+      <text x="602" y="44" fill="#a8e063" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">CV / PERCEPTION</text>
+      <text x="602" y="58" fill="rgba(168,224,99,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">DeepStream · TAO</text>
+
+      <rect x="684" y="28" width="140" height="40" rx="4" fill="rgba(118,185,0,0.06)" stroke="rgba(118,185,0,0.25)" stroke-width="1"/>
+      <text x="754" y="44" fill="#a8e063" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">HPC / SCIENCE</text>
+      <text x="754" y="58" fill="rgba(168,224,99,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">CUDA · cuBLAS</text>
+
+      <!-- AI Factory label in top right -->
+      <rect x="854" y="28" width="220" height="40" rx="4" fill="rgba(118,185,0,0.15)" stroke="rgba(118,185,0,0.6)" stroke-width="1.5"/>
+      <text x="964" y="43" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="13" font-weight="900" text-anchor="middle" letter-spacing="2">🏭 AI FACTORY</text>
+      <text x="964" y="58" fill="rgba(118,185,0,0.7)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">NVIDIA Partner Stack</text>
+
+      <!-- Horizontal separator line -->
+      <line x1="66" y1="80" x2="1080" y2="80" stroke="rgba(118,185,0,0.15)" stroke-width="1" stroke-dasharray="4,3"/>
+
+      <!-- LAYER 2: Software (y=88..134) -->
+      <rect x="66" y="88" width="206" height="40" rx="4" fill="rgba(0,180,200,0.06)" stroke="rgba(0,180,200,0.3)" stroke-width="1"/>
+      <text x="169" y="104" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">NEMO FRAMEWORK</text>
+      <text x="169" y="118" fill="rgba(0,196,220,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Training · Fine-tuning · PEFT</text>
+
+      <rect x="284" y="88" width="186" height="40" rx="4" fill="rgba(0,180,200,0.06)" stroke="rgba(0,180,200,0.25)" stroke-width="1"/>
+      <text x="377" y="104" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">TENSORRT-LLM</text>
+      <text x="377" y="118" fill="rgba(0,196,220,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Quant · Kernel Fusion · Batch</text>
+
+      <rect x="482" y="88" width="186" height="40" rx="4" fill="rgba(0,180,200,0.06)" stroke="rgba(0,180,200,0.25)" stroke-width="1"/>
+      <text x="575" y="104" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">TRITON SERVER</text>
+      <text x="575" y="118" fill="rgba(0,196,220,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Dynamic Batch · Ensemble</text>
+
+      <rect x="680" y="88" width="186" height="40" rx="4" fill="rgba(0,180,200,0.06)" stroke="rgba(0,180,200,0.25)" stroke-width="1"/>
+      <text x="773" y="104" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">NVIDIA NIM</text>
+      <text x="773" y="118" fill="rgba(0,196,220,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Microservices · APIs</text>
+
+      <rect x="878" y="88" width="196" height="40" rx="4" fill="rgba(0,180,200,0.06)" stroke="rgba(0,180,200,0.25)" stroke-width="1"/>
+      <text x="976" y="104" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">KUBERNETES/SLURM</text>
+      <text x="976" y="118" fill="rgba(0,196,220,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Orchestration · Scheduling</text>
+
+      <!-- Separator -->
+      <line x1="66" y1="142" x2="1080" y2="142" stroke="rgba(118,185,0,0.15)" stroke-width="1" stroke-dasharray="4,3"/>
+
+      <!-- LAYER 3: Platform (y=150..196) -->
+      <rect x="66" y="150" width="290" height="40" rx="4" fill="rgba(118,185,0,0.05)" stroke="rgba(118,185,0,0.2)" stroke-width="1"/>
+      <text x="211" y="166" fill="#a8e063" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">BASE COMMAND PLATFORM</text>
+      <text x="211" y="180" fill="rgba(168,224,99,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">AI Workload Management</text>
+
+      <rect x="368" y="150" width="220" height="40" rx="4" fill="rgba(118,185,0,0.05)" stroke="rgba(118,185,0,0.2)" stroke-width="1"/>
+      <text x="478" y="166" fill="#a8e063" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">CUDA / CUDNN</text>
+      <text x="478" y="180" fill="rgba(168,224,99,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">GPU Acceleration Layer</text>
+
+      <rect x="600" y="150" width="220" height="40" rx="4" fill="rgba(118,185,0,0.05)" stroke="rgba(118,185,0,0.2)" stroke-width="1"/>
+      <text x="710" y="166" fill="#a8e063" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">HIGH-SPEED FABRIC</text>
+      <text x="710" y="180" fill="rgba(168,224,99,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">InfiniBand · NVLink · NVSwitch</text>
+
+      <rect x="832" y="150" width="242" height="40" rx="4" fill="rgba(118,185,0,0.05)" stroke="rgba(118,185,0,0.2)" stroke-width="1"/>
+      <text x="953" y="166" fill="#a8e063" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">PARALLEL FILE SYSTEM</text>
+      <text x="953" y="180" fill="rgba(168,224,99,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">GPFS · Lustre · NFS</text>
+
+      <!-- Separator -->
+      <line x1="66" y1="204" x2="1080" y2="204" stroke="rgba(118,185,0,0.15)" stroke-width="1" stroke-dasharray="4,3"/>
+
+      <!-- LAYER 4: Hardware (y=212..258) -->
+      <!-- DGX H100/H200 nodes -->
+      <rect x="66" y="212" width="140" height="52" rx="4" fill="rgba(118,185,0,0.12)" stroke="url(#gG)" stroke-width="1.5"/>
+      <text x="136" y="230" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="1">DGX H200</text>
+      <text x="136" y="244" fill="rgba(118,185,0,0.65)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">8× H200 SXM · 141GB</text>
+      <text x="136" y="255" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NVLink 4 · NVSwitch</text>
+
+      <rect x="218" y="212" width="140" height="52" rx="4" fill="rgba(118,185,0,0.09)" stroke="rgba(118,185,0,0.4)" stroke-width="1"/>
+      <text x="288" y="230" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="1">DGX H100</text>
+      <text x="288" y="244" fill="rgba(118,185,0,0.65)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">8× H100 SXM · 80GB</text>
+      <text x="288" y="255" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NVLink 4 · 600GB/s</text>
+
+      <rect x="370" y="212" width="140" height="52" rx="4" fill="rgba(118,185,0,0.07)" stroke="rgba(118,185,0,0.3)" stroke-width="1"/>
+      <text x="440" y="230" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="1">DGX A100</text>
+      <text x="440" y="244" fill="rgba(118,185,0,0.65)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">8× A100 SXM · 80GB</text>
+      <text x="440" y="255" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NVLink 3.0</text>
+
+      <!-- GPU count diagram right side -->
+      <text x="560" y="230" fill="rgba(118,185,0,0.4)" font-family="DM Mono,monospace" font-size="9" letter-spacing="1">MULTI-NODE CLUSTER</text>
+
+      <!-- GPU grid diagram -->
+      <g transform="translate(555,238)">
+        <!-- Row 1 -->
+        <rect x="0"  y="0" width="16" height="16" rx="2" fill="rgba(118,185,0,0.3)" stroke="rgba(118,185,0,0.6)" stroke-width=".8"/>
+        <rect x="20" y="0" width="16" height="16" rx="2" fill="rgba(118,185,0,0.3)" stroke="rgba(118,185,0,0.6)" stroke-width=".8"/>
+        <rect x="40" y="0" width="16" height="16" rx="2" fill="rgba(118,185,0,0.3)" stroke="rgba(118,185,0,0.6)" stroke-width=".8"/>
+        <rect x="60" y="0" width="16" height="16" rx="2" fill="rgba(118,185,0,0.3)" stroke="rgba(118,185,0,0.6)" stroke-width=".8"/>
+        <!-- Row 2 -->
+        <rect x="0"  y="20" width="16" height="16" rx="2" fill="rgba(118,185,0,0.2)" stroke="rgba(118,185,0,0.4)" stroke-width=".8"/>
+        <rect x="20" y="20" width="16" height="16" rx="2" fill="rgba(118,185,0,0.2)" stroke="rgba(118,185,0,0.4)" stroke-width=".8"/>
+        <rect x="40" y="20" width="16" height="16" rx="2" fill="rgba(118,185,0,0.2)" stroke="rgba(118,185,0,0.4)" stroke-width=".8"/>
+        <rect x="60" y="20" width="16" height="16" rx="2" fill="rgba(118,185,0,0.2)" stroke="rgba(118,185,0,0.4)" stroke-width=".8"/>
+        <!-- connect lines -->
+        <line x1="16" y1="8" x2="20" y2="8" stroke="rgba(118,185,0,0.5)" stroke-width=".8"/>
+        <line x1="36" y1="8" x2="40" y2="8" stroke="rgba(118,185,0,0.5)" stroke-width=".8"/>
+        <line x1="56" y1="8" x2="60" y2="8" stroke="rgba(118,185,0,0.5)" stroke-width=".8"/>
+        <line x1="16" y1="28" x2="20" y2="28" stroke="rgba(118,185,0,0.3)" stroke-width=".8"/>
+        <line x1="36" y1="28" x2="40" y2="28" stroke="rgba(118,185,0,0.3)" stroke-width=".8"/>
+        <line x1="56" y1="28" x2="60" y2="28" stroke="rgba(118,185,0,0.3)" stroke-width=".8"/>
+        <!-- vertical connect between rows -->
+        <line x1="8"  y1="16" x2="8"  y2="20" stroke="rgba(118,185,0,0.4)" stroke-width=".8"/>
+        <line x1="28" y1="16" x2="28" y2="20" stroke="rgba(118,185,0,0.4)" stroke-width=".8"/>
+        <line x1="48" y1="16" x2="48" y2="20" stroke="rgba(118,185,0,0.4)" stroke-width=".8"/>
+        <line x1="68" y1="16" x2="68" y2="20" stroke="rgba(118,185,0,0.4)" stroke-width=".8"/>
+        <text x="38" y="52" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">GPU NODES</text>
+      </g>
+
+      <!-- InfiniBand / NVLink arrows -->
+      <g transform="translate(670,215)">
+        <rect x="0" y="0" width="120" height="50" rx="4" fill="rgba(0,180,200,0.05)" stroke="rgba(0,180,200,0.25)" stroke-width="1"/>
+        <text x="60" y="16" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="1">INTERCONNECT</text>
+        <text x="60" y="28" fill="rgba(0,196,220,0.6)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">InfiniBand NDR 400G</text>
+        <text x="60" y="39" fill="rgba(0,196,220,0.6)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NVLink 900GB/s</text>
+      </g>
+
+      <!-- Power/Cooling -->
+      <g transform="translate(806,215)">
+        <rect x="0" y="0" width="120" height="50" rx="4" fill="rgba(118,185,0,0.04)" stroke="rgba(118,185,0,0.18)" stroke-width="1"/>
+        <text x="60" y="16" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="10" font-weight="700" text-anchor="middle" letter-spacing="1">FACILITY</text>
+        <text x="60" y="28" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">Power · Cooling</text>
+        <text x="60" y="39" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">10-30kW per rack</text>
+      </g>
+
+      <!-- Micropoint / Partner -->
+      <g transform="translate(942,215)">
+        <rect x="0" y="0" width="132" height="50" rx="4" fill="rgba(118,185,0,0.1)" stroke="rgba(118,185,0,0.45)" stroke-width="1.5"/>
+        <text x="66" y="16" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="10" font-weight="800" text-anchor="middle" letter-spacing="1">MICROPOINT</text>
+        <text x="66" y="28" fill="rgba(118,185,0,0.65)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NVIDIA Elite Partner</text>
+        <text x="66" y="39" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">Design · Deploy · Support</text>
+      </g>
+
+      <!-- Vertical flow arrows between layers -->
+      <g stroke="rgba(118,185,0,0.25)" stroke-width="1" marker-end="none">
+        <line x1="200" y1="80" x2="200" y2="88" stroke-dasharray="3,2"/>
+        <line x1="400" y1="80" x2="400" y2="88" stroke-dasharray="3,2"/>
+        <line x1="600" y1="80" x2="600" y2="88" stroke-dasharray="3,2"/>
+        <line x1="200" y1="142" x2="200" y2="150" stroke-dasharray="3,2"/>
+        <line x1="400" y1="142" x2="400" y2="150" stroke-dasharray="3,2"/>
+        <line x1="200" y1="204" x2="200" y2="212" stroke-dasharray="3,2"/>
+        <line x1="400" y1="204" x2="400" y2="212" stroke-dasharray="3,2"/>
+      </g>
+    </svg>
+  </div>
+
   <!-- Sub cards -->
   <div class="spec-sub stagger reveal" style="transition-delay:.1s">
     <div class="spec-sub-card">
@@ -990,6 +1193,97 @@ section::before{
           <div class="stack-pill"><span class="dot dot-d"></span>Slurm</div>
         </div>
       </div>
+
+    <!-- LLM Training & Inference Pipeline Diagram -->
+    <div class="aif-diagram-wrap reveal" style="margin-top:28px;transition-delay:.15s">
+      <div class="aif-diagram-label">Distributed LLM Training & Inference Pipeline</div>
+      <svg viewBox="0 0 900 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block">
+        <rect width="900" height="160" fill="rgba(8,17,26,.8)" rx="0"/>
+
+        <!-- Stage boxes -->
+        <!-- 1: Raw Data -->
+        <rect x="18" y="40" width="118" height="80" rx="4" fill="rgba(118,185,0,0.07)" stroke="rgba(118,185,0,0.3)" stroke-width="1"/>
+        <text x="77" y="72" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing=".5">DATA</text>
+        <text x="77" y="86" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Tokenise</text>
+        <text x="77" y="97" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Preprocess</text>
+        <text x="77" y="108" fill="rgba(118,185,0,0.45)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NEMO DataLoader</text>
+        <!-- flow dot 1 -->
+        <circle cx="160" cy="80" r="4" fill="#76b900" opacity="0.9">
+          <animate attributeName="cx" values="148;164;148" dur="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;1;0" dur="2.4s" repeatCount="indefinite"/>
+        </circle>
+        <line x1="136" y1="80" x2="162" y2="80" stroke="rgba(118,185,0,0.35)" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+        <!-- 2: Distributed Training -->
+        <rect x="166" y="40" width="142" height="80" rx="4" fill="rgba(118,185,0,0.1)" stroke="rgba(118,185,0,0.45)" stroke-width="1.5"/>
+        <text x="237" y="68" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing=".5">DIST. TRAIN</text>
+        <text x="237" y="82" fill="rgba(118,185,0,0.65)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">NeMo + NCCL</text>
+        <text x="237" y="93" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Tensor / Pipeline</text>
+        <text x="237" y="104" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Parallelism</text>
+        <text x="237" y="115" fill="rgba(118,185,0,0.4)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">DGX H100/H200</text>
+
+        <circle cx="322" cy="80" r="4" fill="#76b900" opacity="0.9">
+          <animate attributeName="cx" values="310;326;310" dur="2.4s" begin="0.5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="0.5s" repeatCount="indefinite"/>
+        </circle>
+        <line x1="308" y1="80" x2="330" y2="80" stroke="rgba(118,185,0,0.35)" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+        <!-- 3: Fine-Tune -->
+        <rect x="334" y="40" width="118" height="80" rx="4" fill="rgba(118,185,0,0.07)" stroke="rgba(118,185,0,0.3)" stroke-width="1"/>
+        <text x="393" y="72" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing=".5">FINE-TUNE</text>
+        <text x="393" y="86" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">LoRA · PEFT</text>
+        <text x="393" y="97" fill="rgba(118,185,0,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">SFT · RLHF</text>
+        <text x="393" y="108" fill="rgba(118,185,0,0.45)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">NeMo Customise</text>
+
+        <circle cx="466" cy="80" r="4" fill="#00c4dc" opacity="0.9">
+          <animate attributeName="cx" values="454;470;454" dur="2.4s" begin="1s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="1s" repeatCount="indefinite"/>
+        </circle>
+        <line x1="452" y1="80" x2="474" y2="80" stroke="rgba(0,196,220,0.35)" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+        <!-- 4: TRT-LLM Optimise -->
+        <rect x="478" y="40" width="142" height="80" rx="4" fill="rgba(0,180,200,0.07)" stroke="rgba(0,180,200,0.35)" stroke-width="1.2"/>
+        <text x="549" y="68" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing=".5">TENSORRT-LLM</text>
+        <text x="549" y="82" fill="rgba(0,196,220,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">INT4/FP8 Quant</text>
+        <text x="549" y="93" fill="rgba(0,196,220,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Kernel Fusion</text>
+        <text x="549" y="104" fill="rgba(0,196,220,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">In-flight Batching</text>
+        <text x="549" y="115" fill="rgba(0,196,220,0.4)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">Max Throughput</text>
+
+        <circle cx="634" cy="80" r="4" fill="#00c4dc" opacity="0.9">
+          <animate attributeName="cx" values="622;638;622" dur="2.4s" begin="1.5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="1.5s" repeatCount="indefinite"/>
+        </circle>
+        <line x1="620" y1="80" x2="642" y2="80" stroke="rgba(0,196,220,0.35)" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+        <!-- 5: Triton Serve -->
+        <rect x="646" y="40" width="118" height="80" rx="4" fill="rgba(0,180,200,0.05)" stroke="rgba(0,180,200,0.25)" stroke-width="1"/>
+        <text x="705" y="72" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing=".5">TRITON</text>
+        <text x="705" y="86" fill="rgba(0,196,220,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Model Serving</text>
+        <text x="705" y="97" fill="rgba(0,196,220,0.55)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Dyn Batching</text>
+        <text x="705" y="108" fill="rgba(0,196,220,0.45)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">gRPC · REST · KV</text>
+
+        <circle cx="778" cy="80" r="4" fill="#76b900" opacity="0.9">
+          <animate attributeName="cx" values="766;782;766" dur="2.4s" begin="2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;1;0" dur="2.4s" begin="2s" repeatCount="indefinite"/>
+        </circle>
+        <line x1="764" y1="80" x2="786" y2="80" stroke="rgba(118,185,0,0.35)" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+        <!-- 6: Production API -->
+        <rect x="790" y="40" width="94" height="80" rx="4" fill="rgba(118,185,0,0.12)" stroke="rgba(118,185,0,0.5)" stroke-width="1.5"/>
+        <text x="837" y="70" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="12" font-weight="800" text-anchor="middle" letter-spacing=".5">PROD</text>
+        <text x="837" y="83" fill="rgba(118,185,0,0.7)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">NIM APIs</text>
+        <text x="837" y="94" fill="rgba(118,185,0,0.7)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">Enterprise</text>
+        <text x="837" y="105" fill="rgba(118,185,0,0.6)" font-family="DM Mono,monospace" font-size="8" text-anchor="middle">SLA · Scale</text>
+
+        <!-- Stage labels at bottom -->
+        <text x="77"  y="148" fill="rgba(118,185,0,0.3)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">01</text>
+        <text x="237" y="148" fill="rgba(118,185,0,0.4)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">02</text>
+        <text x="393" y="148" fill="rgba(118,185,0,0.3)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">03</text>
+        <text x="549" y="148" fill="rgba(0,196,220,0.35)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">04</text>
+        <text x="705" y="148" fill="rgba(0,196,220,0.3)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">05</text>
+        <text x="837" y="148" fill="rgba(118,185,0,0.4)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">06</text>
+      </svg>
+    </div>
     </div>
     <div class="domain-matrix reveal" style="transition-delay:.12s">
       <div class="dm-cell hi"><span class="dm-icon">🧠</span><div class="dm-name">Deep Learning</div></div>
@@ -1061,6 +1355,72 @@ section::before{
     <h2 class="sec-title">Why Debjit for Your AI Factory</h2>
     <div class="sec-line"></div>
   </div>
+  <!-- GPU Cluster Visual Accent -->
+  <div class="gpu-cluster-row reveal" style="margin-bottom:32px">
+    <svg viewBox="0 0 1160 90" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block">
+      <rect width="1160" height="90" fill="rgba(8,17,26,.6)" rx="4"/>
+      <rect width="1160" height="90" fill="none" stroke="rgba(118,185,0,.15)" stroke-width="1" rx="4"/>
+      <!-- Row of 8 GPU chips representing DGX node -->
+      <text x="18" y="20" fill="rgba(118,185,0,.4)" font-family="DM Mono,monospace" font-size="8" letter-spacing="2">DGX NODE — 8× H200 TENSOR CORE GPUs — 1.13 EXAFLOPS AI PERFORMANCE</text>
+      <!-- GPU chips -->
+      <g transform="translate(18,26)">
+        <!-- 8 GPU chips with labels -->
+        <!-- GPU 0 -->
+        <rect x="0"   y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.12)" stroke="rgba(118,185,0,.5)" stroke-width="1.2"/>
+        <text x="60"  y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 0</text>
+        <text x="60"  y="29" fill="rgba(118,185,0,.6)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
+        <text x="60"  y="40" fill="rgba(118,185,0,.5)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <!-- GPU 1 -->
+        <rect x="131" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.09)" stroke="rgba(118,185,0,.4)" stroke-width="1"/>
+        <text x="191" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 1</text>
+        <text x="191" y="29" fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
+        <text x="191" y="40" fill="rgba(118,185,0,.45)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <!-- GPU 2 -->
+        <rect x="262" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.09)" stroke="rgba(118,185,0,.35)" stroke-width="1"/>
+        <text x="322" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 2</text>
+        <text x="322" y="29" fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
+        <text x="322" y="40" fill="rgba(118,185,0,.45)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <!-- GPU 3 -->
+        <rect x="393" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.09)" stroke="rgba(118,185,0,.35)" stroke-width="1"/>
+        <text x="453" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 3</text>
+        <text x="453" y="29" fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
+        <text x="453" y="40" fill="rgba(118,185,0,.45)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <!-- NVSwitch center label -->
+        <rect x="524" y="10" width="90" height="30" rx="3" fill="rgba(0,180,200,.08)" stroke="rgba(0,180,200,.3)" stroke-width="1"/>
+        <text x="569" y="21" fill="#00c4dc" font-family="Barlow Condensed,sans-serif" font-size="9" font-weight="700" text-anchor="middle">NVSwitch</text>
+        <text x="569" y="33" fill="rgba(0,196,220,.5)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">900GB/s</text>
+        <!-- GPU 4 -->
+        <rect x="624" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.09)" stroke="rgba(118,185,0,.35)" stroke-width="1"/>
+        <text x="684" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 4</text>
+        <text x="684" y="29" fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
+        <text x="684" y="40" fill="rgba(118,185,0,.45)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <!-- GPU 5 -->
+        <rect x="755" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.09)" stroke="rgba(118,185,0,.35)" stroke-width="1"/>
+        <text x="815" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 5</text>
+        <text x="815" y="29" fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
+        <text x="815" y="40" fill="rgba(118,185,0,.45)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <!-- GPU 6 -->
+        <rect x="886" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.09)" stroke="rgba(118,185,0,.35)" stroke-width="1"/>
+        <text x="946" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 6</text>
+        <text x="946" y="29" fill="rgba(118,185,0,.55)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
+        <text x="946" y="40" fill="rgba(118,185,0,.45)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <!-- GPU 7 -->
+        <rect x="1017" y="0" width="120" height="50" rx="3" fill="rgba(118,185,0,.12)" stroke="rgba(118,185,0,.5)" stroke-width="1.2"/>
+        <text x="1077" y="17" fill="#76b900" font-family="Barlow Condensed,sans-serif" font-size="11" font-weight="900" text-anchor="middle">H200 · GPU 7</text>
+        <text x="1077" y="29" fill="rgba(118,185,0,.6)" font-family="DM Mono,monospace" font-size="7.5" text-anchor="middle">141GB HBM3e</text>
+        <text x="1077" y="40" fill="rgba(118,185,0,.5)" font-family="DM Mono,monospace" font-size="7" text-anchor="middle">3.35TB/s BW</text>
+        <!-- NVLink connections (simplified lines) -->
+        <line x1="120" y1="25" x2="131" y2="25" stroke="rgba(118,185,0,.4)" stroke-width="1.5"/>
+        <line x1="251" y1="25" x2="262" y2="25" stroke="rgba(118,185,0,.35)" stroke-width="1.5"/>
+        <line x1="382" y1="25" x2="393" y2="25" stroke="rgba(118,185,0,.35)" stroke-width="1.5"/>
+        <line x1="513" y1="25" x2="524" y2="25" stroke="rgba(0,196,220,.4)" stroke-width="1.5"/>
+        <line x1="614" y1="25" x2="624" y2="25" stroke="rgba(0,196,220,.4)" stroke-width="1.5"/>
+        <line x1="744" y1="25" x2="755" y2="25" stroke="rgba(118,185,0,.35)" stroke-width="1.5"/>
+        <line x1="875" y1="25" x2="886" y2="25" stroke="rgba(118,185,0,.35)" stroke-width="1.5"/>
+        <line x1="1006" y1="25" x2="1017" y2="25" stroke="rgba(118,185,0,.4)" stroke-width="1.5"/>
+      </g>
+    </svg>
+  </div>
   <div class="value-grid stagger reveal">
     <div class="vcard">
       <div class="vnum">01 / 04</div>
@@ -1103,238 +1463,130 @@ section::before{
 
 <script>
 /* ════════════════════════════════════════════════════
-   FULL-PAGE GPU CIRCUIT BACKGROUND CANVAS
+   NEURAL NETWORK + CIRCUIT HYBRID BACKGROUND
 ════════════════════════════════════════════════════ */
 (function(){
   const canvas = document.getElementById('bg-canvas');
   const ctx = canvas.getContext('2d');
-  let W, H;
-
-  // GPU nodes
-  let gpuNodes = [];
-  // Circuit traces (static paths on a grid)
-  let traces = [];
-  // Data packets flowing along traces
-  let packets = [];
-  // Floating particles
-  let particles = [];
-
-  const G = '118,185,0';
-  const C = '0,229,255';
+  let W, H, nodes=[], packets=[];
+  const G='118,185,0', C='0,229,255';
 
   function resize(){
-    W = canvas.width = window.innerWidth;
-    H = canvas.height = document.body.scrollHeight || window.innerHeight;
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
     init();
   }
 
-  function gridPt(cols, rows){
-    // snap to a loose grid
-    const gx = Math.floor(W / cols);
-    const gy = 80;
-    const col = Math.floor(Math.random() * cols);
-    const row = Math.floor(Math.random() * Math.ceil(H / gy));
-    return { x: col * gx + gx * .5, y: row * gy + gy * .5 };
-  }
-
   function init(){
-    gpuNodes = [];
-    traces = [];
-    packets = [];
-    particles = [];
-
-    const nodeCount = Math.min(60, Math.floor((W * H) / 28000));
-
-    // Place GPU nodes
-    for(let i = 0; i < nodeCount; i++){
-      gpuNodes.push({
-        x: 40 + Math.random() * (W - 80),
-        y: 40 + Math.random() * (H - 80),
-        vx: (Math.random() - .5) * .18,
-        vy: (Math.random() - .5) * .18,
-        r: 1.2 + Math.random() * 1.8,
-        pulse: Math.random() * Math.PI * 2,
-        speed: .012 + Math.random() * .01,
-        type: Math.random() < .15 ? 'core' : 'node' // 15% are "core" GPU nodes
+    nodes=[]; packets=[];
+    const count = window.innerWidth < 600 ? 45 : 80;
+    for(let i=0;i<count;i++){
+      nodes.push({
+        x:Math.random()*W, y:Math.random()*H,
+        vx:(Math.random()-.5)*.28, vy:(Math.random()-.5)*.28,
+        r:1.4+Math.random()*2.2,
+        pulse:Math.random()*Math.PI*2,
+        speed:.014+Math.random()*.012,
+        core: i < Math.floor(count*.12) // 12% are "core" GPU nodes
       });
     }
-
-    // Build circuit traces — horizontal/vertical axis-aligned paths
-    const traceCount = Math.floor(nodeCount * 0.4);
-    for(let i = 0; i < traceCount; i++){
-      const a = gpuNodes[Math.floor(Math.random() * gpuNodes.length)];
-      const b = gpuNodes[Math.floor(Math.random() * gpuNodes.length)];
-      if(a !== b){
-        traces.push({
-          ax: a.x, ay: a.y, bx: b.x, by: b.y,
-          // L-shaped route: go horizontal then vertical
-          midX: b.x, midY: a.y,
-          alpha: .06 + Math.random() * .08,
-          isCyan: Math.random() < .12
-        });
-      }
-    }
-
-    // Floating ambient particles
-    for(let i = 0; i < 80; i++){
-      particles.push({
-        x: Math.random() * W,
-        y: Math.random() * H,
-        vx: (Math.random() - .5) * .12,
-        vy: (Math.random() - .5) * .12,
-        r: .5 + Math.random() * .8,
-        a: .05 + Math.random() * .12,
-        isCyan: Math.random() < .1
-      });
-    }
-
-    // Seed initial packets
-    for(let i = 0; i < 20; i++) spawnPacket();
+    for(let i=0;i<18;i++) spawnPacket();
   }
 
   function spawnPacket(){
-    if(traces.length === 0) return;
-    const tr = traces[Math.floor(Math.random() * traces.length)];
+    const a=nodes[Math.floor(Math.random()*nodes.length)];
+    const b=nodes[Math.floor(Math.random()*nodes.length)];
+    if(a===b) return;
     packets.push({
-      trace: tr,
-      t: Math.random(), // 0..1 along trace
-      speed: .0015 + Math.random() * .003,
-      isCyan: tr.isCyan,
-      size: 2 + Math.random() * 2
+      from:a, to:b, t:Math.random(),
+      speed:.004+Math.random()*.004,
+      isCyan:Math.random()<.15, size:1.8+Math.random()*1.5
     });
-  }
-
-  // Position along L-shaped trace
-  function tracePos(tr, t){
-    // first half: ax,ay -> midX,midY; second half: midX,midY -> bx,by
-    if(t < .5){
-      const s = t * 2;
-      return { x: tr.ax + (tr.midX - tr.ax)*s, y: tr.ay + (tr.midY - tr.ay)*s };
-    } else {
-      const s = (t - .5)*2;
-      return { x: tr.midX + (tr.bx - tr.midX)*s, y: tr.midY + (tr.by - tr.midY)*s };
-    }
   }
 
   function draw(){
-    ctx.clearRect(0, 0, W, H);
+    ctx.clearRect(0,0,W,H);
 
-    // ── Update & draw circuit traces ──
-    traces.forEach(tr => {
-      const col = tr.isCyan ? C : G;
-      ctx.strokeStyle = `rgba(${col},${tr.alpha})`;
-      ctx.lineWidth = .7;
-      ctx.beginPath();
-      ctx.moveTo(tr.ax, tr.ay);
-      ctx.lineTo(tr.midX, tr.midY);
-      ctx.lineTo(tr.bx, tr.by);
-      ctx.stroke();
-
-      // Junction dot at corner
-      ctx.beginPath();
-      ctx.arc(tr.midX, tr.midY, 1.5, 0, Math.PI*2);
-      ctx.fillStyle = `rgba(${col},${tr.alpha * 1.5})`;
-      ctx.fill();
+    // Update node positions
+    nodes.forEach(n=>{
+      n.x+=n.vx; n.y+=n.vy; n.pulse+=n.speed;
+      if(n.x<0||n.x>W) n.vx*=-1;
+      if(n.y<0||n.y>H) n.vy*=-1;
     });
 
-    // ── Update & draw GPU nodes ──
-    gpuNodes.forEach(n => {
-      n.x += n.vx; n.y += n.vy; n.pulse += n.speed;
-      if(n.x < 20 || n.x > W-20) n.vx *= -1;
-      if(n.y < 20 || n.y > H-20) n.vy *= -1;
-
-      const p = .5 + .5 * Math.sin(n.pulse);
-
-      if(n.type === 'core'){
-        // Draw small chip-like square
-        const s = 5 + p*2;
-        ctx.fillStyle = `rgba(${G},${.12 + p*.1})`;
-        ctx.strokeStyle = `rgba(${G},${.3 + p*.2})`;
-        ctx.lineWidth = .8;
-        ctx.fillRect(n.x - s/2, n.y - s/2, s, s);
-        ctx.strokeRect(n.x - s/2, n.y - s/2, s, s);
-        // Crosshair
-        ctx.strokeStyle = `rgba(${G},${.15 + p*.1})`;
-        ctx.lineWidth = .5;
-        ctx.beginPath(); ctx.moveTo(n.x-s, n.y); ctx.lineTo(n.x+s, n.y); ctx.stroke();
-        ctx.beginPath(); ctx.moveTo(n.x, n.y-s); ctx.lineTo(n.x, n.y+s); ctx.stroke();
-      } else {
-        // Node dot
-        ctx.beginPath();
-        ctx.arc(n.x, n.y, n.r * (1 + p*.3), 0, Math.PI*2);
-        ctx.fillStyle = `rgba(${G},${.25 + p*.25})`;
-        ctx.fill();
-      }
-    });
-
-    // ── Node connection edges (short range) ──
-    for(let i = 0; i < gpuNodes.length; i++){
-      for(let j = i+1; j < gpuNodes.length; j++){
-        const dx = gpuNodes[i].x - gpuNodes[j].x;
-        const dy = gpuNodes[i].y - gpuNodes[j].y;
-        const d = Math.sqrt(dx*dx + dy*dy);
-        if(d < 100){
-          ctx.strokeStyle = `rgba(${G},${(1-d/100)*.1})`;
-          ctx.lineWidth = .5;
-          ctx.beginPath();
-          ctx.moveTo(gpuNodes[i].x, gpuNodes[i].y);
-          ctx.lineTo(gpuNodes[j].x, gpuNodes[j].y);
-          ctx.stroke();
+    // Draw proximity edges (neural network style)
+    const maxDist = 150;
+    for(let i=0;i<nodes.length;i++){
+      for(let j=i+1;j<nodes.length;j++){
+        const dx=nodes[i].x-nodes[j].x, dy=nodes[i].y-nodes[j].y;
+        const d=Math.sqrt(dx*dx+dy*dy);
+        if(d<maxDist){
+          const a=(1-d/maxDist)*.18;
+          // Slightly cyan for long connections, green for short
+          const col = d>100 ? C : G;
+          ctx.strokeStyle=`rgba(${col},${a})`;
+          ctx.lineWidth=.65;
+          ctx.beginPath(); ctx.moveTo(nodes[i].x,nodes[i].y); ctx.lineTo(nodes[j].x,nodes[j].y); ctx.stroke();
         }
       }
     }
 
-    // ── Data packets ──
-    for(let i = packets.length - 1; i >= 0; i--){
-      const pk = packets[i];
-      pk.t += pk.speed;
-      if(pk.t >= 1){
-        packets.splice(i, 1);
-        if(packets.length < 30) spawnPacket();
-        continue;
+    // Draw nodes
+    nodes.forEach(n=>{
+      const p=.5+.5*Math.sin(n.pulse);
+      if(n.core){
+        // Core GPU chip — small glowing square with crosshair
+        const s=5+p*2.5;
+        ctx.fillStyle=`rgba(${G},${.1+p*.08})`;
+        ctx.strokeStyle=`rgba(${G},${.35+p*.25})`;
+        ctx.lineWidth=.8;
+        ctx.fillRect(n.x-s/2,n.y-s/2,s,s);
+        ctx.strokeRect(n.x-s/2,n.y-s/2,s,s);
+        // crosshair
+        ctx.strokeStyle=`rgba(${G},${.12+p*.08})`;
+        ctx.lineWidth=.5;
+        ctx.beginPath();ctx.moveTo(n.x-s*1.6,n.y);ctx.lineTo(n.x+s*1.6,n.y);ctx.stroke();
+        ctx.beginPath();ctx.moveTo(n.x,n.y-s*1.6);ctx.lineTo(n.x,n.y+s*1.6);ctx.stroke();
+        // outer glow
+        const grd=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,s*4);
+        grd.addColorStop(0,`rgba(${G},${.12*p})`); grd.addColorStop(1,'transparent');
+        ctx.beginPath();ctx.arc(n.x,n.y,s*4,0,Math.PI*2);ctx.fillStyle=grd;ctx.fill();
+      } else {
+        // Regular neuron node
+        ctx.beginPath();
+        ctx.arc(n.x,n.y,n.r*(1+p*.4),0,Math.PI*2);
+        ctx.fillStyle=`rgba(${G},${.3+p*.3})`;
+        ctx.fill();
+        // soft glow halo
+        const g=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,n.r*5);
+        g.addColorStop(0,`rgba(${G},${.1*p})`); g.addColorStop(1,'transparent');
+        ctx.beginPath();ctx.arc(n.x,n.y,n.r*5,0,Math.PI*2);
+        ctx.fillStyle=g;ctx.fill();
       }
-      const pos = tracePos(pk.trace, pk.t);
-      const col = pk.isCyan ? C : G;
-
-      // Glow trail
-      const grad = ctx.createRadialGradient(pos.x, pos.y, 0, pos.x, pos.y, pk.size*4);
-      grad.addColorStop(0, `rgba(${col},.5)`);
-      grad.addColorStop(1, 'transparent');
-      ctx.beginPath();
-      ctx.arc(pos.x, pos.y, pk.size*4, 0, Math.PI*2);
-      ctx.fillStyle = grad;
-      ctx.fill();
-
-      // Core dot
-      ctx.beginPath();
-      ctx.arc(pos.x, pos.y, pk.size, 0, Math.PI*2);
-      ctx.fillStyle = `rgba(${col},.9)`;
-      ctx.fill();
-    }
-
-    // ── Ambient particles ──
-    particles.forEach(p => {
-      p.x += p.vx; p.y += p.vy;
-      if(p.x < 0) p.x = W; if(p.x > W) p.x = 0;
-      if(p.y < 0) p.y = H; if(p.y > H) p.y = 0;
-      const col = p.isCyan ? C : G;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
-      ctx.fillStyle = `rgba(${col},${p.a})`;
-      ctx.fill();
     });
+
+    // Draw data packets
+    for(let i=packets.length-1;i>=0;i--){
+      const pk=packets[i];
+      pk.t+=pk.speed;
+      if(pk.t>=1){ packets.splice(i,1); if(packets.length<24) spawnPacket(); continue; }
+      const x=pk.from.x+(pk.to.x-pk.from.x)*pk.t;
+      const y=pk.from.y+(pk.to.y-pk.from.y)*pk.t;
+      const col=pk.isCyan?C:G;
+      // glow
+      const gp=ctx.createRadialGradient(x,y,0,x,y,pk.size*4);
+      gp.addColorStop(0,`rgba(${col},.6)`); gp.addColorStop(1,'transparent');
+      ctx.beginPath();ctx.arc(x,y,pk.size*4,0,Math.PI*2);ctx.fillStyle=gp;ctx.fill();
+      // core
+      ctx.beginPath();ctx.arc(x,y,pk.size,0,Math.PI*2);
+      ctx.fillStyle=`rgba(${col},.95)`;ctx.fill();
+    }
 
     requestAnimationFrame(draw);
   }
 
-  // Recompute canvas size on scroll / resize (body grows with content)
-  window.addEventListener('resize', () => {
-    clearTimeout(window._rsz);
-    window._rsz = setTimeout(resize, 200);
-  });
-
-  // Initial sizing — wait for full DOM render
-  setTimeout(resize, 100);
+  window.addEventListener('resize',()=>{clearTimeout(window._rsznn);window._rsznn=setTimeout(resize,150);});
+  resize();
   draw();
 })();
 
